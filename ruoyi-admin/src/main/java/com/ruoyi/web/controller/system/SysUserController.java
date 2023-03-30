@@ -12,9 +12,15 @@ import com.ruoyi.common.enums.BusinessType;
 import com.ruoyi.common.utils.SecurityUtils;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.common.utils.poi.ExcelUtil;
-import com.ruoyi.system.service.*;
+import com.ruoyi.system.service.ISysDeptService;
+import com.ruoyi.system.service.ISysPostService;
+import com.ruoyi.system.service.ISysRoleService;
+import com.ruoyi.system.service.ISysUserService;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -44,7 +50,10 @@ public class SysUserController extends BaseController {
 
     @Autowired
     private ISysPostService postService;
-
+    @Autowired
+    private JavaMailSender javaMailSender;
+    @Value("${spring.mail.username}")
+    private String senderMailAddress;
 
 
     /**
@@ -167,11 +176,25 @@ public class SysUserController extends BaseController {
     @Log(title = "用户管理", businessType = BusinessType.UPDATE)
     @PutMapping("/resetPwd")
     public AjaxResult resetPwd(@RequestBody SysUser user) throws MessagingException {
+
+        SysUser byId = userService.getById(user.getUserId());
+        String email = byId.getEmail();
+        String password = user.getPassword();
         userService.checkUserAllowed(user);
         userService.checkUserDataScope(user.getUserId());
         user.setPassword(SecurityUtils.encryptPassword(user.getPassword()));
         user.setUpdateBy(getUsername());
-         return toAjax(userService.resetPwd(user));
+
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom(senderMailAddress); //发送者，已经在开头引入
+//        message.setTo("29152440390ai@gmail.com");
+        message.setTo(email);
+        message.setSubject("重置密码");
+        message.setText("尊敬的用户您的密码已经重置为:" + password);
+        javaMailSender.send(message);
+        return toAjax(userService.resetPwd(user));
+
+
     }
 
     /**
