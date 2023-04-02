@@ -109,14 +109,14 @@ public class WebSocketUsers
         Collection<Session> values = USERS.values();
         for (Session value : values)
         {
-            sendMessageToUserByText(value, message);
+           sendMessageToUserByText(value, message);
         }
     }
 
     /**
      * 发送文本消息
      *
-     * @param userName 自己的用户名
+//     * @param userName 自己的用户名
      * @param message 消息内容
      */
     public static void sendMessageToUserByText(Session session, String message)

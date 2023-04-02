@@ -12,6 +12,9 @@
     <el-input type="textarea" v-model="text_content" :rows="9" /> 返回内容
     <br />
     <br />
+    <el-input type="textarea" v-model="text_content" :rows="9" />
+    <br />
+    <br />
   </div>
 </template>
 

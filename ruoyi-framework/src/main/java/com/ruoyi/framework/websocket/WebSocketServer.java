@@ -1,6 +1,10 @@
 package com.ruoyi.framework.websocket;
 
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.Semaphore;
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
@@ -8,11 +12,14 @@ import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
+
+import com.ruoyi.common.annotation.Anonymous;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import springfox.documentation.spring.web.json.Json;
 
 /**
  * websocket 消息处理
@@ -20,6 +27,7 @@ import org.springframework.web.bind.annotation.PostMapping;
  *
  */
 @Component
+@Anonymous
 @ServerEndpoint("/websocket/message")
 public class WebSocketServer
 {
@@ -34,6 +42,9 @@ public class WebSocketServer
     public static int socketMaxOnlineCount = 100;
 
     private static Semaphore socketSemaphore = new Semaphore(socketMaxOnlineCount);
+
+    private Session sessionM;
+    private String message;
 
     /**
      * 连接建立成功调用的方法
@@ -57,6 +68,10 @@ public class WebSocketServer
             WebSocketUsers.put(session.getId(), session);
             LOGGER.info("\n 建立连接 - {}", session);
             LOGGER.info("\n 当前人数 - {}", WebSocketUsers.getUsers().size());
+            if (session.getId().equals("0")) {
+                this.sessionM = session;
+                System.out.println(this.sessionM.getId());
+            }
             WebSocketUsers.sendMessageToUserByText(session, "连接成功");
         }
     }
@@ -87,7 +102,7 @@ public class WebSocketServer
         }
         String sessionId = session.getId();
         LOGGER.info("\n 连接异常 - {}", sessionId);
-        LOGGER.info("\n 异常信息 - {}", exception);
+//        LOGGER.info("\n 异常信息 - {}", exception);
         // 移出用户
         WebSocketUsers.remove(sessionId);
         // 获取到信号量则需释放
@@ -98,18 +113,35 @@ public class WebSocketServer
      * 服务器接收到客户端消息时调用的方法
      */
     @OnMessage
-    public void onMessage(String message, Session session)
+    public void onMessage(String message)
     {
 //        String msg = message.replace("你", "我").replace("吗", "");
-        String msg = message.toString();
+//        String msg = message.toString();
 //        System.out.println(msg);
 //        System.out.println(session.getId());
-        WebSocketUsers.sendMessageToUserByText(session, msg);
-        String ms = session.getId().toString() + ":" + message.toString();
-        System.out.println(ms);
 
+//        WebSocketUsers.sendMessageToUserByText(session, message);
+        WebSocketUsers.sendMessageToUsersByText(message);
+
+        String ms = message.toString();
+        System.out.println(ms);
+//        return ms;
+
+    }
+    public void sendMessage(String message) throws IOException {
+        this.sessionM.getBasicRemote().sendText(message);
+    }
+
+
+    public void setSession(Session session) {
+        this.sessionM = session;
+    }
+    public void setMessage(String message) {
+        this.message = message;
     }
 
 
 
-}
+
+
+    }
