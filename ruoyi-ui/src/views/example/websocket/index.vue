@@ -9,7 +9,7 @@
       <el-col :sm="24" :lg="24">
         <div>
           <el-input v-model="url" type="text" style="width: 20%" /> &nbsp; &nbsp;
-          <el-button @click="join" type="primary">连接</el-button>
+          <el-button type="primary" @click="mounted">连接</el-button>
           <el-button @click="exit" type="danger">断开</el-button>
           <br />
           <br />
@@ -53,6 +53,9 @@ export default {
       this.ws.onclose = function (event) {
         self.text_content = self.text_content + "已经关闭连接!" + "\n";
       };
+    },
+    mounted() {
+      this.join()
     },
     exit() {
       if (this.ws) {

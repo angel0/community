@@ -43,6 +43,9 @@ export default {
         self.text_content = self.text_content + "已经关闭连接!" + "\n";
       };
     },
+    mounted() {
+      this.join()
+    },
     exit() {
       if (this.ws) {
         this.ws.close();

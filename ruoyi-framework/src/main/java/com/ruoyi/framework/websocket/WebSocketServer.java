@@ -1,25 +1,14 @@
 package com.ruoyi.framework.websocket;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArraySet;
-import java.util.concurrent.Semaphore;
-import javax.websocket.OnClose;
-import javax.websocket.OnError;
-import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
-import javax.websocket.server.ServerEndpoint;
-
 import com.ruoyi.common.annotation.Anonymous;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import springfox.documentation.spring.web.json.Json;
+
+import javax.websocket.*;
+import javax.websocket.server.ServerEndpoint;
+import java.io.IOException;
+import java.util.concurrent.Semaphore;
 
 /**
  * websocket 消息处理
@@ -113,15 +102,14 @@ public class WebSocketServer
      * 服务器接收到客户端消息时调用的方法
      */
     @OnMessage
-    public void onMessage(String message)
-    {
+    public void onMessage(Session session, String message) {
 //        String msg = message.replace("你", "我").replace("吗", "");
 //        String msg = message.toString();
 //        System.out.println(msg);
 //        System.out.println(session.getId());
 
 //        WebSocketUsers.sendMessageToUserByText(session, message);
-        WebSocketUsers.sendMessageToUsersByText(message);
+        WebSocketUsers.sendMessageToUsersByText(session, message);
 
         String ms = message.toString();
         System.out.println(ms);

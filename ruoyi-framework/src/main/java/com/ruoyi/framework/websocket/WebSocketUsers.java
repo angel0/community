@@ -1,13 +1,13 @@
 package com.ruoyi.framework.websocket;
 
-import java.io.IOException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.websocket.Session;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import javax.websocket.Session;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * websocket 客户端用户集
@@ -104,13 +104,12 @@ public class WebSocketUsers
      *
      * @param message 消息内容
      */
-    public static void sendMessageToUsersByText(String message)
-    {
+    public static void sendMessageToUsersByText(Session session, String message) {
         Collection<Session> values = USERS.values();
-        for (Session value : values)
-        {
-           sendMessageToUserByText(value, message);
+        for (Session value : values) {
+            sendMessageToUserByText(value, message);
         }
+
     }
 
     /**
@@ -123,12 +122,12 @@ public class WebSocketUsers
     {
         if (session != null)
         {
-            try
-            {
+            try {
+
+
                 session.getBasicRemote().sendText(message);
-            }
-            catch (IOException e)
-            {
+//                session.getBasicRemote().sendObject(date);
+            } catch (Exception e) {
                 LOGGER.error("\n[发送消息异常]", e);
             }
         }

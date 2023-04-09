@@ -297,7 +297,9 @@
         <module>ruoyi-common</module>
         <module>ruoyi-flowable</module>
         <module>ruoyi-plugin</module>
-        <module>Smart_community</module>
+        <module>ruoyi-community</module>
+
+
     </modules>
     <packaging>pom</packaging>
 

@@ -61,7 +61,7 @@
         </dependency>
         <dependency>
             <groupId>com.ruoyi</groupId>
-            <artifactId>Smart_community</artifactId>
+            <artifactId>ruoyi-community</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -83,6 +83,18 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-community</artifactId>
+            <version>3.8.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-community</artifactId>
+            <version>3.8.5</version>
+            <scope>compile</scope>
         </dependency>
 
 

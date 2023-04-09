@@ -288,21 +288,21 @@
             </el-form-item>
           </el-col>
         </el-row>
-        <el-row>
-          <el-col :span="12">
-            <el-form-item label="岗位">
-              <el-select v-model="form.postIds" multiple placeholder="请选择岗位">
-                <el-option
-                  v-for="item in postOptions"
-                  :key="item.postId"
-                  :label="item.postName"
-                  :value="item.postId"
-                  :disabled="item.status == 1"
-                ></el-option>
-              </el-select>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
+        <!--        <el-row>-->
+        <!--          <el-col :span="12">-->
+        <!--            <el-form-item label="岗位">-->
+        <!--              <el-select v-model="form.postIds" multiple placeholder="请选择岗位">-->
+        <!--                <el-option-->
+        <!--                  v-for="item in postOptions"-->
+        <!--                  :key="item.postId"-->
+        <!--                  :label="item.postName"-->
+        <!--                  :value="item.postId"-->
+        <!--                  :disabled="item.status == 1"-->
+        <!--                ></el-option>-->
+        <!--              </el-select>-->
+        <!--            </el-form-item>-->
+        <!--          </el-col>-->
+        <el-col :span="12">
             <el-form-item label="角色">
               <el-select v-model="form.roleIds" multiple placeholder="请选择角色">
                 <el-option
@@ -366,31 +366,31 @@
 </template>
 
 <script>
-  import {
-    addUser,
-    changeUserStatus,
-    delUser,
-    deptTreeSelect,
-    getUser,
-    listUser,
-    resetUserPwd,
-    updateUser
-  } from "@/api/system/user";
-  import {getToken} from "@/utils/auth";
-  import Treeselect from "@riophae/vue-treeselect";
-  import "@riophae/vue-treeselect/dist/vue-treeselect.css";
+import {
+  addUser,
+  changeUserStatus,
+  delUser,
+  deptTreeSelect,
+  getUser,
+  listUser,
+  resetUserPwd,
+  updateUser
+} from "@/api/system/user";
+import {getToken} from "@/utils/auth";
+import Treeselect from "@riophae/vue-treeselect";
+import "@riophae/vue-treeselect/dist/vue-treeselect.css";
 
-  export default {
-    name: "User",
-    dicts: ['sys_normal_disable', 'sys_user_sex'],
-    components: {Treeselect},
-    data() {
-      return {
-        // 遮罩层
-        loading: true,
-        // 选中数组
-        ids: [],
-        // 非单个禁用
+export default {
+  name: "User",
+  dicts: ['sys_normal_disable', 'sys_user_sex'],
+  components: {Treeselect},
+  data() {
+    return {
+      // 遮罩层
+      loading: true,
+      // 选中数组
+      ids: [],
+      // 非单个禁用
         single: true,
         // 非多个禁用
         multiple: true,
@@ -456,8 +456,7 @@
           {key: 5, label: `状态`, visible: true},
           {key: 6, label: `创建时间`, visible: true},
           {key: 7, label: `门牌号`, visible: true},
-          {key: 8, label: `车牌号`, visible: true},
-          {key: 9, label: `车位号`, visible: true},
+
         ],
         // 表单校验
         rules: {

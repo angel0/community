@@ -9,21 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Smart_community</artifactId>
+    <artifactId>ruoyi-community</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.ruoyi</groupId>
             <artifactId>ruoyi-common</artifactId>
         </dependency>
-        <!-- 邮件 -->
         <dependency>
-            <groupId>io.github.biezhi</groupId>
-            <artifactId>oh-my-email</artifactId>
-            <version>0.0.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-common</artifactId>
         </dependency>
     </dependencies>
 
