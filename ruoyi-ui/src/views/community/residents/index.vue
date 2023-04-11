@@ -240,9 +240,9 @@ export default {
         address: [
           {required: true, message: "居住地址不能为空", trigger: "blur"}
         ],
-        remarks: [
-          {required: true, message: "备注不能为空", trigger: "blur"}
-        ],
+        // remarks: [
+        //   {required: true, message: "备注不能为空", trigger: "blur"}
+        // ],
         //       status: [
         //   { required: true, message: "0正常1停用不能为空", trigger: "change" }
         // ],

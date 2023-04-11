@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruoyi.community.mapper.ParkingSpacesMapper">
+
+    <resultMap type="ParkingSpaces" id="ParkingSpacesResult">
+        <result property="parkId" column="park_id"/>
+        <result property="parkingSpaceId" column="parking_space_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="parkingSpaceNumber" column="parking_space_number"/>
+        <result property="status" column="status"/>
+        <result property="rent" column="rent"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+        <association property="sysUser" column="user_id" javaType="SysUser" resultMap="sysUser"/>
+    </resultMap>
+
+
+    <resultMap id="sysUser" type="SysUser">
+        <id property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="nickName" column="nick_name"/>
+        <result property="email" column="email"/>
+    </resultMap>
+
+
+    <sql id="selectParkingSpacesVo">
+        select pa.park_id,
+               pa.parking_space_id,
+               pa.user_id,
+               pa.parking_space_number,
+               pa.status,
+               pa.create_by,
+               pa.create_time,
+               pa.update_by,
+               pa.update_time,
+               pa.remark,
+               su.user_name
+
+        from parking_spaces pa
+                 left join sys_user su on pa.user_id = su.user_id
+    </sql>
+
+
+    <select id="selectParkingSpacesList" parameterType="ParkingSpaces" resultMap="ParkingSpacesResult">
+        <include refid="selectParkingSpacesVo"/>
+        <where>
+            <if test="parkingSpaceId != null  and parkingSpaceId != ''">and parking_space_id like concat('%',
+                #{parkingSpaceId}, '%')
+            </if>
+            <if test="userId != null ">and user_id = #{userId}</if>
+            <if test="parkingSpaceNumber != null  and parkingSpaceNumber != ''">and parking_space_number like
+                concat('%', #{parkingSpaceNumber}, '%')
+            </if>
+            <if test="status != null ">and status = #{status}</if>
+            <if test="rent != null  and rent != ''">and rent = #{rent}</if>
+        </where>
+    </select>
+
+    <select id="selectParkingSpacesByParkId" parameterType="Integer" resultMap="ParkingSpacesResult">
+        <include refid="selectParkingSpacesVo"/>
+        where park_id = #{parkId}
+    </select>
+
+    <insert id="insertParkingSpaces" parameterType="ParkingSpaces" useGeneratedKeys="true" keyProperty="parkId">
+        insert into parking_spaces
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parkingSpaceId != null and parkingSpaceId != ''">parking_space_id,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="parkingSpaceNumber != null">parking_space_number,</if>
+            <if test="status != null">status,</if>
+            <if test="rent != null and rent != ''">rent,</if>
+            <if test="createBy != null and createBy != ''">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null and remark != ''">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="parkingSpaceId != null and parkingSpaceId != ''">#{parkingSpaceId},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="parkingSpaceNumber != null">#{parkingSpaceNumber},</if>
+            <if test="status != null">#{status},</if>
+            <if test="rent != null and rent != ''">#{rent},</if>
+            <if test="createBy != null and createBy != ''">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null and remark != ''">#{remark},</if>
+        </trim>
+    </insert>
+
+    <update id="updateParkingSpaces" parameterType="ParkingSpaces">
+        update parking_spaces
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="parkingSpaceId != null and parkingSpaceId != ''">parking_space_id = #{parkingSpaceId},</if>
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="parkingSpaceNumber != null">parking_space_number = #{parkingSpaceNumber},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="rent != null and rent != ''">rent = #{rent},</if>
+            <if test="createBy != null and createBy != ''">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null and remark != ''">remark = #{remark},</if>
+        </trim>
+        where park_id = #{parkId}
+    </update>
+
+    <delete id="deleteParkingSpacesByParkId" parameterType="Integer">
+        delete
+        from parking_spaces
+        where park_id = #{parkId}
+    </delete>
+
+    <delete id="deleteParkingSpacesByParkIds" parameterType="String">
+        delete from parking_spaces where park_id in
+        <foreach item="parkId" collection="array" open="(" separator="," close=")">
+            #{parkId}
+        </foreach>
+    </delete>
+    <!--</mapper>-->
+</mapper>
