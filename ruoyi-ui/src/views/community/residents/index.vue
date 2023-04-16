@@ -108,7 +108,7 @@
 
     <el-table v-loading="loading" :data="residentsList" @selection-change="handleSelectionChange">
       <el-table-column align="center" type="selection" width="55"/>
-      <el-table-column align="center" label="住户id" prop="residentsId"/>
+<!--      <el-table-column align="center" label="住户id" prop="residentsId"/>-->
       <el-table-column align="center" label="用户名" prop="sysUser.userName"/>
       <el-table-column align="center" label="单元号" prop="unitNumber"/>
       <el-table-column align="center" label="楼号" prop="buildingNumber"/>
@@ -165,9 +165,9 @@
         <el-form-item label="居住地址" prop="address">
           <el-input v-model="form.address" placeholder="请输入居住地址"/>
         </el-form-item>
-        <!--        <el-form-item label="备注" prop="remarks">-->
-        <!--          <el-input v-model="form.remarks" placeholder="请输入备注"/>-->
-        <!--        </el-form-item>-->
+        <el-form-item label="备注" prop="remarks">
+          <el-input v-model="form.remarks" placeholder="请输入备注"/>
+        </el-form-item>
         <!--        <el-form-item label="0表示存在2表示删除" prop="delFlag">-->
         <!--          <el-input v-model="form.delFlag" placeholder="请输入0表示存在2表示删除"/>-->
         <!--        </el-form-item>-->
@@ -184,10 +184,10 @@
 </template>
 
 <script>
-import {addResidents, delResidents, getResidents, listResidents, updateResidents} from "@/api/community/residents";
+import {addResidents, delResidents, getResidents, listResidents, updateResidents} from '@/api/community/residents'
 
 export default {
-  name: "Residents",
+  name: 'Residents',
   data() {
     return {
       // 遮罩层
@@ -205,7 +205,7 @@ export default {
       // 住户信息表格数据
       residentsList: [],
       // 弹出层标题
-      title: "",
+      title: '',
       // 是否显示弹出层
       open: false,
       // 查询参数
@@ -219,27 +219,31 @@ export default {
         address: null,
         remarks: null,
         status: null,
-        sysUser: null,
+        sysUser: null
       },
       // 表单参数
       form: {},
       // 表单校验
+      defaultProps: {
+        children: "children",
+        label: "label"
+      },
       rules: {
         userId: [
-          {required: true, message: "用户id不能为空", trigger: "blur"}
+          {required: true, message: '用户id不能为空', trigger: 'blur'}
         ],
         buildingNumber: [
-          {required: true, message: "楼号不能为空", trigger: "blur"}
+          {required: true, message: '楼号不能为空', trigger: 'blur'}
         ],
         unitNumber: [
-          {required: true, message: "单元号不能为空", trigger: "blur"}
+          {required: true, message: '单元号不能为空', trigger: 'blur'}
         ],
         area: [
-          {required: true, message: "房屋面积不能为空", trigger: "blur"}
+          {required: true, message: '房屋面积不能为空', trigger: 'blur'}
         ],
         address: [
-          {required: true, message: "居住地址不能为空", trigger: "blur"}
-        ],
+          {required: true, message: '居住地址不能为空', trigger: 'blur'}
+        ]
         // remarks: [
         //   {required: true, message: "备注不能为空", trigger: "blur"}
         // ],
@@ -265,25 +269,25 @@ export default {
         //   { required: true, message: "$comment不能为空", trigger: "blur" }
         // ]
       }
-    };
+    }
   },
   created() {
-    this.getList();
+    this.getList()
   },
   methods: {
     /** 查询住户信息列表 */
     getList() {
-      this.loading = true;
+      this.loading = true
       listResidents(this.queryParams).then(response => {
-        this.residentsList = response.rows;
-        this.total = response.total;
-        this.loading = false;
-      });
+        this.residentsList = response.rows
+        this.total = response.total
+        this.loading = false
+      })
     },
     // 取消按钮
     cancel() {
-      this.open = false;
-      this.reset();
+      this.open = false
+      this.reset()
     },
     // 表单重置
     reset() {
@@ -301,19 +305,19 @@ export default {
         createTime: null,
         updateBy: null,
         updateTime: null,
-        remark: null,
-      };
-      this.resetForm("form");
+        remark: null
+      }
+      this.resetForm('form')
     },
     /** 搜索按钮操作 */
     handleQuery() {
-      this.queryParams.pageNum = 1;
-      this.getList();
+      this.queryParams.pageNum = 1
+      this.getList()
     },
     /** 重置按钮操作 */
     resetQuery() {
-      this.resetForm("queryForm");
-      this.handleQuery();
+      this.resetForm('queryForm')
+      this.handleQuery()
     },
     // 多选框选中数据
     handleSelectionChange(selection) {
@@ -323,50 +327,50 @@ export default {
     },
     /** 新增按钮操作 */
     handleAdd() {
-      this.reset();
-      this.open = true;
-      this.title = "添加住户信息";
+      this.reset()
+      this.open = true
+      this.title = '添加住户信息'
     },
     /** 修改按钮操作 */
     handleUpdate(row) {
-      this.reset();
+      this.reset()
       const residentsId = row.residentsId || this.ids
       getResidents(residentsId).then(response => {
-        this.form = response.data;
-        this.open = true;
-        this.title = "修改住户信息";
-      });
+        this.form = response.data
+        this.open = true
+        this.title = '修改住户信息'
+      })
     },
     /** 提交按钮 */
     submitForm() {
-      this.$refs["form"].validate(valid => {
+      this.$refs['form'].validate(valid => {
         if (valid) {
           if (this.form.residentsId != null) {
             updateResidents(this.form).then(response => {
-              this.$modal.msgSuccess("修改成功");
-              this.open = false;
-              this.getList();
-            });
+              this.$modal.msgSuccess('修改成功')
+              this.open = false
+              this.getList()
+            })
           } else {
             addResidents(this.form).then(response => {
-              this.$modal.msgSuccess("新增成功");
-              this.open = false;
-              this.getList();
-            });
+              this.$modal.msgSuccess('新增成功')
+              this.open = false
+              this.getList()
+            })
           }
         }
-      });
+      })
     },
     /** 删除按钮操作 */
     handleDelete(row) {
-      const residentsIds = row.residentsId || this.ids;
+      const residentsIds = row.residentsId || this.ids
       this.$modal.confirm('是否确认删除住户信息编号为"' + residentsIds + '"的数据项？').then(function () {
-        return delResidents(residentsIds);
+        return delResidents(residentsIds)
       }).then(() => {
-        this.getList();
-        this.$modal.msgSuccess("删除成功");
+        this.getList()
+        this.$modal.msgSuccess('删除成功')
       }).catch(() => {
-      });
+      })
     },
     /** 导出按钮操作 */
     handleExport() {
@@ -375,5 +379,5 @@ export default {
       }, `residents_${new Date().getTime()}.xlsx`)
     }
   }
-};
+}
 </script>

@@ -4,24 +4,24 @@
       <el-form-item label="车位ID" prop="parkingSpaceId">
         <el-input
           v-model="queryParams.parkingSpaceId"
-          clearable
           placeholder="请输入车位ID"
+          clearable
           @keyup.enter.native="handleQuery"
         />
       </el-form-item>
       <el-form-item label="用户id" prop="userId">
         <el-input
           v-model="queryParams.userId"
-          clearable
           placeholder="请输入用户id"
+          clearable
           @keyup.enter.native="handleQuery"
         />
       </el-form-item>
       <el-form-item label="车位号" prop="parkingSpaceNumber">
         <el-input
           v-model="queryParams.parkingSpaceNumber"
-          clearable
           placeholder="请输入车位号"
+          clearable
           @keyup.enter.native="handleQuery"
         />
       </el-form-item>
@@ -36,12 +36,14 @@
         </el-select>
       </el-form-item>
       <el-form-item label="是否租用" prop="rent">
-        <el-input
-          v-model="queryParams.rent"
-          clearable
-          placeholder="请输入是否租用"
-          @keyup.enter.native="handleQuery"
-        />
+        <el-select v-model="queryParams.rent" clearable placeholder="请选择是否租用">
+          <el-option
+            v-for="dict in dict.type.sys_yes_no"
+            :key="dict.value"
+            :label="dict.label"
+            :value="dict.value"
+          />
+        </el-select>
       </el-form-item>
       <el-form-item>
         <el-button icon="el-icon-search" size="mini" type="primary" @click="handleQuery">搜索</el-button>
@@ -53,11 +55,11 @@
       <el-col :span="1.5">
         <el-button
           v-hasPermi="['community:spaces:add']"
-          icon="el-icon-plus"
           plain
+          icon="el-icon-plus"
           size="mini"
-          type="primary"
           @click="handleAdd"
+          type="primary"
         >新增
         </el-button>
       </el-col>
@@ -66,10 +68,10 @@
           v-hasPermi="['community:spaces:edit']"
           :disabled="single"
           icon="el-icon-edit"
-          plain
           size="mini"
-          type="success"
+          plain
           @click="handleUpdate"
+          type="success"
         >修改
         </el-button>
       </el-col>
@@ -78,21 +80,21 @@
           v-hasPermi="['community:spaces:remove']"
           :disabled="multiple"
           icon="el-icon-delete"
-          plain
           size="mini"
-          type="danger"
+          plain
           @click="handleDelete"
+          type="danger"
         >删除
         </el-button>
       </el-col>
       <el-col :span="1.5">
         <el-button
           v-hasPermi="['community:spaces:export']"
-          icon="el-icon-download"
           plain
+          icon="el-icon-download"
           size="mini"
-          type="warning"
           @click="handleExport"
+          type="warning"
         >导出
         </el-button>
       </el-col>
@@ -103,7 +105,7 @@
       <el-table-column align="center" type="selection" width="55"/>
       <el-table-column align="center" label="主键" prop="parkId"/>
       <el-table-column align="center" label="车位ID" prop="parkingSpaceId"/>
-      <el-table-column align="center" label="用户id" prop="userId"/>
+      <el-table-column align="center" label="用户名" prop="sysUser.userName"/>
       <el-table-column align="center" label="车位号" prop="parkingSpaceNumber"/>
       <el-table-column align="center" label="是否停用" prop="status">
         <template slot-scope="scope">
@@ -119,19 +121,19 @@
       <el-table-column align="center" class-name="small-padding fixed-width" label="操作">
         <template slot-scope="scope">
           <el-button
-            v-hasPermi="['community:spaces:edit']"
-            icon="el-icon-edit"
             size="mini"
             type="text"
+            v-hasPermi="['community:spaces:edit']"
             @click="handleUpdate(scope.row)"
+            icon="el-icon-edit"
           >修改
           </el-button>
           <el-button
-            v-hasPermi="['community:spaces:remove']"
-            icon="el-icon-delete"
             size="mini"
             type="text"
+            v-hasPermi="['community:spaces:remove']"
             @click="handleDelete(scope.row)"
+            icon="el-icon-delete"
           >删除
           </el-button>
         </template>
@@ -140,9 +142,9 @@
 
     <pagination
       v-show="total>0"
+      :total="total"
       :limit.sync="queryParams.pageSize"
       :page.sync="queryParams.pageNum"
-      :total="total"
       @pagination="getList"
     />
 
@@ -152,8 +154,8 @@
         <el-form-item label="车位ID" prop="parkingSpaceId">
           <el-input v-model="form.parkingSpaceId" placeholder="请输入车位ID"/>
         </el-form-item>
-        <el-form-item label="用户id" prop="userId">
-          <el-input v-model="form.userId" placeholder="请输入用户id"/>
+        <el-form-item label="用户id" prop="parkId">
+          <el-input v-model="form.parkId" placeholder="请输入用户id"/>
         </el-form-item>
         <el-form-item label="车位号" prop="parkingSpaceNumber">
           <el-input v-model="form.parkingSpaceNumber" placeholder="请输入车位号"/>
@@ -169,7 +171,14 @@
           </el-radio-group>
         </el-form-item>
         <el-form-item label="是否租用" prop="rent">
-          <el-input v-model="form.rent" placeholder="请输入是否租用"/>
+          <el-radio-group v-model="form.rent">
+            <el-radio
+              v-for="dict in dict.type.sys_yes_no"
+              :key="dict.value"
+              :label="dict.value"
+            >{{ dict.label }}
+            </el-radio>
+          </el-radio-group>
         </el-form-item>
         <el-form-item label="备注" prop="remark">
           <el-input v-model="form.remark" placeholder="请输入备注"/>
@@ -184,11 +193,11 @@
 </template>
 
 <script>
-import {addSpaces, delSpaces, getSpaces, listSpaces, updateSpaces} from "@/api/community/spaces";
+import {addSpaces, delSpaces, getSpaces, listSpaces, updateSpaces} from '@/api/community/spaces'
 
 export default {
-  name: "Spaces",
-  dicts: ['sys_normal_disable'],
+  name: 'Spaces',
+  dicts: ['sys_yes_no', 'sys_normal_disable'],
   data() {
     return {
       // 遮罩层
@@ -206,7 +215,7 @@ export default {
       // 车位信息表格数据
       spacesList: [],
       // 弹出层标题
-      title: "",
+      title: '',
       // 是否显示弹出层
       open: false,
       // 查询参数
@@ -218,58 +227,58 @@ export default {
         parkingSpaceNumber: null,
         status: null,
         rent: null,
+        sysUser: null
+
       },
+
       // 表单参数
       form: {},
       // 表单校验
       rules: {
         parkingSpaceId: [
-          {required: true, message: "车位ID不能为空", trigger: "blur"}
+          {required: true, message: '车位ID不能为空', trigger: 'blur'}
         ],
         userId: [
-          {required: true, message: "用户id不能为空", trigger: "blur"}
+          {required: true, message: '用户id不能为空', trigger: 'blur'}
         ],
         status: [
-          {required: true, message: "是否停用不能为空", trigger: "change"}
+          {required: true, message: '是否停用不能为空', trigger: 'change'}
         ],
         rent: [
-          {required: true, message: "是否租用不能为空", trigger: "blur"}
-        ],
-        createBy: [
-          {required: true, message: "创建者不能为空", trigger: "blur"}
-        ],
-        createTime: [
-          {required: true, message: "创建时间不能为空", trigger: "blur"}
-        ],
-        updateBy: [
-          {required: true, message: "更新时间不能为空", trigger: "blur"}
-        ],
-        updateTime: [
-          {required: true, message: "更新者不能为空", trigger: "blur"}
-        ],
-        remark: [
-          {required: true, message: "备注不能为空", trigger: "blur"}
+          {required: true, message: '是否租用不能为空', trigger: 'change'}
         ]
+        //       createBy: [
+        //   { required: true, message: "创建者不能为空", trigger: "blur" }
+        // ],
+        //       createTime: [
+        //   { required: true, message: "创建时间不能为空", trigger: "blur" }
+        // ],
+        //       updateBy: [
+        //   { required: true, message: "更新时间不能为空", trigger: "blur" }
+        // ],
+        //       updateTime: [
+        //   { required: true, message: "更新者不能为空", trigger: "blur" }
+        // ],
       }
-    };
+    }
   },
   created() {
-    this.getList();
+    this.getList()
   },
   methods: {
     /** 查询车位信息列表 */
     getList() {
-      this.loading = true;
+      this.loading = true
       listSpaces(this.queryParams).then(response => {
-        this.spacesList = response.rows;
-        this.total = response.total;
-        this.loading = false;
-      });
+        this.spacesList = response.rows
+        this.total = response.total
+        this.loading = false
+      })
     },
     // 取消按钮
     cancel() {
-      this.open = false;
-      this.reset();
+      this.open = false
+      this.reset()
     },
     // 表单重置
     reset() {
@@ -279,24 +288,26 @@ export default {
         userId: null,
         parkingSpaceNumber: null,
         status: null,
-        rent: null,
+        rent: "Y",
         createBy: null,
         createTime: null,
         updateBy: null,
         updateTime: null,
-        remark: null
-      };
-      this.resetForm("form");
+        remark: null,
+        sysUser: null
+
+      }
+      this.resetForm('form')
     },
     /** 搜索按钮操作 */
     handleQuery() {
-      this.queryParams.pageNum = 1;
-      this.getList();
+      this.queryParams.pageNum = 1
+      this.getList()
     },
     /** 重置按钮操作 */
     resetQuery() {
-      this.resetForm("queryForm");
-      this.handleQuery();
+      this.resetForm('queryForm')
+      this.handleQuery()
     },
     // 多选框选中数据
     handleSelectionChange(selection) {
@@ -306,50 +317,51 @@ export default {
     },
     /** 新增按钮操作 */
     handleAdd() {
-      this.reset();
-      this.open = true;
-      this.title = "添加车位信息";
+      this.reset()
+      this.open = true
+      this.title = '添加车位信息'
     },
     /** 修改按钮操作 */
     handleUpdate(row) {
-      this.reset();
+      this.reset()
       const parkId = row.parkId || this.ids
       getSpaces(parkId).then(response => {
-        this.form = response.data;
-        this.open = true;
-        this.title = "修改车位信息";
-      });
+        this.form = response.data
+        this.open = true
+        this.title = '修改车位信息'
+        // alert(response.data.sysUser.userName)
+      })
     },
     /** 提交按钮 */
     submitForm() {
-      this.$refs["form"].validate(valid => {
+      this.$refs['form'].validate(valid => {
         if (valid) {
           if (this.form.parkId != null) {
             updateSpaces(this.form).then(response => {
-              this.$modal.msgSuccess("修改成功");
-              this.open = false;
-              this.getList();
-            });
+              this.$modal.msgSuccess('修改成功')
+              this.open = false
+              this.getList()
+            })
           } else {
             addSpaces(this.form).then(response => {
-              this.$modal.msgSuccess("新增成功");
-              this.open = false;
-              this.getList();
-            });
+              this.$modal.msgSuccess('新增成功')
+              this.open = false
+              this.getList()
+            })
           }
         }
-      });
+      })
     },
     /** 删除按钮操作 */
     handleDelete(row) {
-      const parkIds = row.parkId || this.ids;
+      const parkIds = row.parkId || this.ids
       this.$modal.confirm('是否确认删除车位信息编号为"' + parkIds + '"的数据项？').then(function () {
-        return delSpaces(parkIds);
+        return delSpaces(parkIds)
       }).then(() => {
-        this.getList();
-        this.$modal.msgSuccess("删除成功");
+        this.getList()
+        this.$modal.msgSuccess('删除成功')
       }).catch(() => {
-      });
+      })
     },
     /** 导出按钮操作 */
     handleExport() {
@@ -358,5 +370,5 @@ export default {
       }, `spaces_${new Date().getTime()}.xlsx`)
     }
   }
-};
+}
 </script>
