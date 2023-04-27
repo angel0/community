@@ -8,6 +8,7 @@ import com.ruoyi.common.enums.BusinessType;
 import com.ruoyi.common.utils.poi.ExcelUtil;
 import com.ruoyi.community.domain.ParkingSpaces;
 import com.ruoyi.community.service.IParkingSpacesService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,8 @@ import java.util.List;
  * @date 2023-04-11
  */
 @RestController
+@Api(tags = "车位信息接口")
+
 @RequestMapping("/community/spaces")
 public class ParkingSpacesController extends BaseController {
     @Autowired

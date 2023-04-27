@@ -8,6 +8,7 @@ import com.ruoyi.common.enums.BusinessType;
 import com.ruoyi.common.utils.poi.ExcelUtil;
 import com.ruoyi.community.domain.Residents;
 import com.ruoyi.community.service.IResidentsService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +22,9 @@ import java.util.List;
  * @author yanghua
  * @date 2023-04-08
  */
+@Api(tags = "住户信息接口")
 @RestController
+
 @RequestMapping("/community/residents")
 public class ResidentsController extends BaseController {
     @Autowired

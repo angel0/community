@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -62,6 +63,7 @@ public class BaseEntity implements Serializable {
      */
     @TableField(exist = false)
     @JsonIgnore
+    @ApiModelProperty(hidden = false)
     private Map<String, Object> params;
 
     public String getSearchValue() {

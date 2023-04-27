@@ -11,7 +11,7 @@
  Target Server Version : 50617 (5.6.17)
  File Encoding         : 65001
 
- Date: 16/04/2023 21:24:35
+ Date: 28/04/2023 00:28:59
 */
 
 SET NAMES utf8mb4;
@@ -430,15 +430,6 @@ VALUES ('53a7cbcc-ca0b-11ed-b90d-2016b9c02335', 1, 'leave:4:f49b5e34-ca0a-11ed-b
         '53b0a56d-ca0b-11ed-b90d-2016b9c02335', NULL, '社区管理员', 'userTask', '1', '2023-03-24 14:15:51.531', NULL, 3,
         NULL, NULL, '');
 INSERT INTO `act_hi_actinst`
-VALUES ('58c07f23-d12c-11ed-be2b-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Flow_0s856e9', NULL, NULL,
-        NULL, 'sequenceFlow', NULL, '2023-04-02 15:59:51.613', '2023-04-02 15:59:51.613', 1, 0, NULL, '');
-INSERT INTO `act_hi_actinst`
-VALUES ('58c07f24-d12c-11ed-be2b-2016b9c02335', 2, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Activity_0xh9dwc',
-        '58d1bd35-d12c-11ed-be2b-2016b9c02335', NULL, '设备维修', 'userTask', '3', '2023-04-02 15:59:51.613',
-        '2023-04-02 16:00:30.840', 2, 39227, NULL, '');
-INSERT INTO `act_hi_actinst`
 VALUES ('59c08fe4-cbe3-11ed-a77c-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
         '59bfa57b-cbe3-11ed-a77c-2016b9c02335', '59c068d3-cbe3-11ed-a77c-2016b9c02335', 'Event_1490ccg', NULL, NULL,
         NULL, 'startEvent', NULL, '2023-03-26 22:34:44.216', '2023-03-26 22:34:44.216', 1, 0, NULL, '');
@@ -463,15 +454,6 @@ INSERT INTO `act_hi_actinst`
 VALUES ('66cd7aa0-ca2b-11ed-9c60-2016b9c02335', 1, 'leave:5:d96565c4-ca0d-11ed-b90d-2016b9c02335',
         '66cbf3f2-ca2b-11ed-9c60-2016b9c02335', '66cd7a9d-ca2b-11ed-9c60-2016b9c02335', 'Activity_13uq05m',
         '66cd7aa1-ca2b-11ed-9c60-2016b9c02335', NULL, '社区管理员', 'userTask', '1', '2023-03-24 18:05:27.550', NULL, 3,
-        NULL, NULL, '');
-INSERT INTO `act_hi_actinst`
-VALUES ('702236e8-d12c-11ed-be2b-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Flow_01pc7kx', NULL, NULL,
-        NULL, 'sequenceFlow', NULL, '2023-04-02 16:00:30.841', '2023-04-02 16:00:30.841', 1, 0, NULL, '');
-INSERT INTO `act_hi_actinst`
-VALUES ('702236e9-d12c-11ed-be2b-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Activity_1ne3thd',
-        '702236ea-d12c-11ed-be2b-2016b9c02335', NULL, '结果检测', 'userTask', '2', '2023-04-02 16:00:30.841', NULL, 2,
         NULL, NULL, '');
 INSERT INTO `act_hi_actinst`
 VALUES ('7056abdd-cb94-11ed-8c20-2016b9c02335', 1, 'check_in:1:1c85c30e-cb94-11ed-8c20-2016b9c02335',
@@ -630,10 +612,10 @@ VALUES ('e86a3d06-cbe1-11ed-a77c-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-
         'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Flow_02o19w2', NULL, NULL,
         NULL, 'sequenceFlow', NULL, '2023-03-26 22:24:24.571', '2023-03-26 22:24:24.571', 2, 0, NULL, '');
 INSERT INTO `act_hi_actinst`
-VALUES ('e86a3d07-cbe1-11ed-a77c-2016b9c02335', 2, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
+VALUES ('e86a3d07-cbe1-11ed-a77c-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
         'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Activity_12hhoy5',
-        'e86e0d98-cbe1-11ed-a77c-2016b9c02335', NULL, '员工报修', 'userTask', '3', '2023-03-26 22:24:24.571',
-        '2023-04-02 15:59:51.607', 3, 581727036, NULL, '');
+        'e86e0d98-cbe1-11ed-a77c-2016b9c02335', NULL, '员工报修', 'userTask', '3', '2023-03-26 22:24:24.571', NULL, 3,
+        NULL, NULL, '');
 INSERT INTO `act_hi_actinst`
 VALUES ('e9b7f05d-283f-11ed-9000-3887d5e2c283', 1, 'leave:2:f519d4d0-1ec3-11ed-af71-3887d5e2c283',
         'e9b53134-283f-11ed-9000-3887d5e2c283', 'e9b7f05c-283f-11ed-9000-3887d5e2c283', 'Event_1u2autv', NULL, NULL,
@@ -1077,12 +1059,6 @@ INSERT INTO `act_hi_identitylink`
 VALUES ('53b475ff-ca0b-11ed-b90d-2016b9c02335', NULL, 'participant', '1', NULL, '2023-03-24 14:15:51.614',
         '53a44955-ca0b-11ed-b90d-2016b9c02335', NULL, NULL, NULL, NULL);
 INSERT INTO `act_hi_identitylink`
-VALUES ('58b4bf52-d12c-11ed-be2b-2016b9c02335', NULL, 'participant', '3', NULL, '2023-04-02 15:59:51.536',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL, NULL, NULL, NULL);
-INSERT INTO `act_hi_identitylink`
-VALUES ('58e2d436-d12c-11ed-be2b-2016b9c02335', NULL, 'assignee', '3', '58d1bd35-d12c-11ed-be2b-2016b9c02335',
-        '2023-04-02 15:59:51.838', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `act_hi_identitylink`
 VALUES ('59bfcc8c-cbe3-11ed-a77c-2016b9c02335', NULL, 'starter', '2', NULL, '2023-03-26 22:34:44.211',
         '59bfa57b-cbe3-11ed-a77c-2016b9c02335', NULL, NULL, NULL, NULL);
 INSERT INTO `act_hi_identitylink`
@@ -1100,15 +1076,6 @@ VALUES ('66d060d2-ca2b-11ed-9c60-2016b9c02335', NULL, 'assignee', '1', '66cd7aa1
 INSERT INTO `act_hi_identitylink`
 VALUES ('66d36e13-ca2b-11ed-9c60-2016b9c02335', NULL, 'participant', '1', NULL, '2023-03-24 18:05:27.589',
         '66cbf3f2-ca2b-11ed-9c60-2016b9c02335', NULL, NULL, NULL, NULL);
-INSERT INTO `act_hi_identitylink`
-VALUES ('70212577-d12c-11ed-be2b-2016b9c02335', NULL, 'participant', '3', NULL, '2023-04-02 16:00:30.835',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL, NULL, NULL, NULL);
-INSERT INTO `act_hi_identitylink`
-VALUES ('70236f6b-d12c-11ed-be2b-2016b9c02335', NULL, 'assignee', '2', '702236ea-d12c-11ed-be2b-2016b9c02335',
-        '2023-04-02 16:00:30.849', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `act_hi_identitylink`
-VALUES ('702480dc-d12c-11ed-be2b-2016b9c02335', NULL, 'participant', '2', NULL, '2023-04-02 16:00:30.857',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL, NULL, NULL, NULL);
 INSERT INTO `act_hi_identitylink`
 VALUES ('7044aa70-cb94-11ed-8c20-2016b9c02335', NULL, 'starter', '2', NULL, '2023-03-26 13:09:51.750',
         '7044835f-cb94-11ed-8c20-2016b9c02335', NULL, NULL, NULL, NULL);
@@ -1440,11 +1407,6 @@ VALUES ('53b0a56d-ca0b-11ed-b90d-2016b9c02335', 1, 'leave:4:f49b5e34-ca0a-11ed-b
         NULL, NULL, NULL, '社区管理员', NULL, NULL, NULL, '1', '2023-03-24 14:15:51.531', NULL, NULL, NULL, NULL, 50,
         NULL, NULL, NULL, '', '2023-03-24 14:15:51.608');
 INSERT INTO `act_hi_taskinst`
-VALUES ('58d1bd35-d12c-11ed-be2b-2016b9c02335', 2, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL,
-        'Activity_0xh9dwc', 'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', NULL, NULL,
-        NULL, NULL, NULL, '设备维修', NULL, NULL, NULL, '3', '2023-04-02 15:59:51.613', NULL, '2023-04-02 16:00:30.839',
-        39226, NULL, 50, NULL, NULL, NULL, '', '2023-04-02 16:00:30.839');
-INSERT INTO `act_hi_taskinst`
 VALUES ('59c08fe7-cbe3-11ed-a77c-2016b9c02335', 2, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL,
         'Activity_12hhoy5', '59bfa57b-cbe3-11ed-a77c-2016b9c02335', '59c068d3-cbe3-11ed-a77c-2016b9c02335', NULL, NULL,
         NULL, NULL, NULL, '员工报修', NULL, NULL, NULL, '3', '2023-03-26 22:34:44.216', NULL, '2023-03-26 22:43:16.296',
@@ -1454,11 +1416,6 @@ VALUES ('66cd7aa1-ca2b-11ed-9c60-2016b9c02335', 1, 'leave:5:d96565c4-ca0d-11ed-b
         'Activity_13uq05m', '66cbf3f2-ca2b-11ed-9c60-2016b9c02335', '66cd7a9d-ca2b-11ed-9c60-2016b9c02335', NULL, NULL,
         NULL, NULL, NULL, '社区管理员', NULL, NULL, NULL, '1', '2023-03-24 18:05:27.550', NULL, NULL, NULL, NULL, 50,
         NULL, NULL, NULL, '', '2023-03-24 18:05:27.569');
-INSERT INTO `act_hi_taskinst`
-VALUES ('702236ea-d12c-11ed-be2b-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL,
-        'Activity_1ne3thd', 'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', NULL, NULL,
-        NULL, NULL, NULL, '结果检测', NULL, NULL, NULL, '2', '2023-04-02 16:00:30.841', NULL, NULL, NULL, NULL, 50,
-        NULL, NULL, NULL, '', '2023-04-02 16:00:30.849');
 INSERT INTO `act_hi_taskinst`
 VALUES ('705d1480-cb94-11ed-8c20-2016b9c02335', 1, 'check_in:1:1c85c30e-cb94-11ed-8c20-2016b9c02335', NULL,
         'Activity_06tm4j2', '7044835f-cb94-11ed-8c20-2016b9c02335', '7056abdc-cb94-11ed-8c20-2016b9c02335', NULL, NULL,
@@ -1520,10 +1477,10 @@ VALUES ('e5a8bdb4-ca0d-11ed-b90d-2016b9c02335', 1, 'leave:5:d96565c4-ca0d-11ed-b
         NULL, NULL, NULL, '社区管理员', NULL, NULL, NULL, '1', '2023-03-24 14:34:15.478', NULL, NULL, NULL, NULL, 50,
         NULL, NULL, NULL, '', '2023-03-24 14:34:15.487');
 INSERT INTO `act_hi_taskinst`
-VALUES ('e86e0d98-cbe1-11ed-a77c-2016b9c02335', 2, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL,
+VALUES ('e86e0d98-cbe1-11ed-a77c-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL,
         'Activity_12hhoy5', 'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', NULL, NULL,
-        NULL, NULL, NULL, '员工报修', NULL, NULL, NULL, '3', '2023-03-26 22:24:24.571', NULL, '2023-04-02 15:59:51.572',
-        581727001, NULL, 50, NULL, NULL, NULL, '', '2023-04-02 15:59:51.572');
+        NULL, NULL, NULL, '员工报修', NULL, NULL, NULL, '3', '2023-03-26 22:24:24.571', NULL, NULL, NULL, NULL, 50,
+        NULL, NULL, NULL, '', '2023-03-26 22:24:24.625');
 INSERT INTO `act_hi_taskinst`
 VALUES ('e9bbe800-283f-11ed-9000-3887d5e2c283', 2, 'leave:2:f519d4d0-1ec3-11ed-af71-3887d5e2c283', NULL,
         'Activity_0gcxdwu', 'e9b53134-283f-11ed-9000-3887d5e2c283', 'e9b7f05c-283f-11ed-9000-3887d5e2c283', NULL, NULL,
@@ -2358,15 +2315,6 @@ VALUES ('53a7cbcc-ca0b-11ed-b90d-2016b9c02335', 1, 'leave:4:f49b5e34-ca0a-11ed-b
         '53b0a56d-ca0b-11ed-b90d-2016b9c02335', NULL, '社区管理员', 'userTask', '1', '2023-03-24 14:15:51.531', NULL,
         NULL, 3, NULL, '');
 INSERT INTO `act_ru_actinst`
-VALUES ('58c07f23-d12c-11ed-be2b-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Flow_0s856e9', NULL, NULL,
-        NULL, 'sequenceFlow', NULL, '2023-04-02 15:59:51.613', '2023-04-02 15:59:51.613', 0, 1, NULL, '');
-INSERT INTO `act_ru_actinst`
-VALUES ('58c07f24-d12c-11ed-be2b-2016b9c02335', 2, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Activity_0xh9dwc',
-        '58d1bd35-d12c-11ed-be2b-2016b9c02335', NULL, '设备维修', 'userTask', '3', '2023-04-02 15:59:51.613',
-        '2023-04-02 16:00:30.840', 39227, 2, NULL, '');
-INSERT INTO `act_ru_actinst`
 VALUES ('59c08fe4-cbe3-11ed-a77c-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
         '59bfa57b-cbe3-11ed-a77c-2016b9c02335', '59c068d3-cbe3-11ed-a77c-2016b9c02335', 'Event_1490ccg', NULL, NULL,
         NULL, 'startEvent', NULL, '2023-03-26 22:34:44.216', '2023-03-26 22:34:44.216', 0, 1, NULL, '');
@@ -2392,15 +2340,6 @@ VALUES ('66cd7aa0-ca2b-11ed-9c60-2016b9c02335', 1, 'leave:5:d96565c4-ca0d-11ed-b
         '66cbf3f2-ca2b-11ed-9c60-2016b9c02335', '66cd7a9d-ca2b-11ed-9c60-2016b9c02335', 'Activity_13uq05m',
         '66cd7aa1-ca2b-11ed-9c60-2016b9c02335', NULL, '社区管理员', 'userTask', '1', '2023-03-24 18:05:27.550', NULL,
         NULL, 3, NULL, '');
-INSERT INTO `act_ru_actinst`
-VALUES ('702236e8-d12c-11ed-be2b-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Flow_01pc7kx', NULL, NULL,
-        NULL, 'sequenceFlow', NULL, '2023-04-02 16:00:30.841', '2023-04-02 16:00:30.841', 0, 1, NULL, '');
-INSERT INTO `act_ru_actinst`
-VALUES ('702236e9-d12c-11ed-be2b-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Activity_1ne3thd',
-        '702236ea-d12c-11ed-be2b-2016b9c02335', NULL, '结果检测', 'userTask', '2', '2023-04-02 16:00:30.841', NULL,
-        NULL, 2, NULL, '');
 INSERT INTO `act_ru_actinst`
 VALUES ('7056abdd-cb94-11ed-8c20-2016b9c02335', 1, 'check_in:1:1c85c30e-cb94-11ed-8c20-2016b9c02335',
         '7044835f-cb94-11ed-8c20-2016b9c02335', '7056abdc-cb94-11ed-8c20-2016b9c02335', 'Event_1kkx7wh', NULL, NULL,
@@ -2545,10 +2484,10 @@ VALUES ('e86a3d06-cbe1-11ed-a77c-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-
         'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Flow_02o19w2', NULL, NULL,
         NULL, 'sequenceFlow', NULL, '2023-03-26 22:24:24.571', '2023-03-26 22:24:24.571', 0, 2, NULL, '');
 INSERT INTO `act_ru_actinst`
-VALUES ('e86a3d07-cbe1-11ed-a77c-2016b9c02335', 2, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
+VALUES ('e86a3d07-cbe1-11ed-a77c-2016b9c02335', 1, 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335',
         'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'e8597424-cbe1-11ed-a77c-2016b9c02335', 'Activity_12hhoy5',
-        'e86e0d98-cbe1-11ed-a77c-2016b9c02335', NULL, '员工报修', 'userTask', '3', '2023-03-26 22:24:24.571',
-        '2023-04-02 15:59:51.607', 581727036, 3, NULL, '');
+        'e86e0d98-cbe1-11ed-a77c-2016b9c02335', NULL, '员工报修', 'userTask', '3', '2023-03-26 22:24:24.571', NULL,
+        NULL, 3, NULL, '');
 INSERT INTO `act_ru_actinst`
 VALUES ('e9b7f05d-283f-11ed-9000-3887d5e2c283', 1, 'leave:2:f519d4d0-1ec3-11ed-af71-3887d5e2c283',
         'e9b53134-283f-11ed-9000-3887d5e2c283', 'e9b7f05c-283f-11ed-9000-3887d5e2c283', 'Event_1u2autv', NULL, NULL,
@@ -2920,9 +2859,9 @@ VALUES ('e855f1ac-cbe1-11ed-a77c-2016b9c02335', 2, 'e855f1ac-cbe1-11ed-a77c-2016
         0, 1, NULL, '', '设备维修', 'Event_1490ccg', '2023-03-26 22:24:24.438', '2', NULL, NULL, 1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `act_ru_execution`
-VALUES ('e8597424-cbe1-11ed-a77c-2016b9c02335', 3, 'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL,
+VALUES ('e8597424-cbe1-11ed-a77c-2016b9c02335', 1, 'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL,
         'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL,
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'Activity_1ne3thd', 1, 0, 0, 0, 0, 1, NULL, '', NULL, NULL,
+        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'Activity_12hhoy5', 1, 0, 0, 0, 0, 1, NULL, '', NULL, NULL,
         '2023-03-26 22:24:24.461', NULL, NULL, NULL, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `act_ru_execution`
 VALUES ('e9b53134-283f-11ed-9000-3887d5e2c283', 2, 'e9b53134-283f-11ed-9000-3887d5e2c283', NULL, NULL,
@@ -3095,9 +3034,6 @@ INSERT INTO `act_ru_identitylink`
 VALUES ('53b475ff-ca0b-11ed-b90d-2016b9c02335', 1, NULL, 'participant', '1', NULL,
         '53a44955-ca0b-11ed-b90d-2016b9c02335', NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `act_ru_identitylink`
-VALUES ('58b4bf52-d12c-11ed-be2b-2016b9c02335', 1, NULL, 'participant', '3', NULL,
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `act_ru_identitylink`
 VALUES ('59bfcc8c-cbe3-11ed-a77c-2016b9c02335', 1, NULL, 'starter', '2', NULL, '59bfa57b-cbe3-11ed-a77c-2016b9c02335',
         NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `act_ru_identitylink`
@@ -3109,12 +3045,6 @@ VALUES ('66cbf3f3-ca2b-11ed-9c60-2016b9c02335', 1, NULL, 'starter', '1', NULL, '
 INSERT INTO `act_ru_identitylink`
 VALUES ('66d36e13-ca2b-11ed-9c60-2016b9c02335', 1, NULL, 'participant', '1', NULL,
         '66cbf3f2-ca2b-11ed-9c60-2016b9c02335', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `act_ru_identitylink`
-VALUES ('70212577-d12c-11ed-be2b-2016b9c02335', 1, NULL, 'participant', '3', NULL,
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `act_ru_identitylink`
-VALUES ('702480dc-d12c-11ed-be2b-2016b9c02335', 1, NULL, 'participant', '2', NULL,
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `act_ru_identitylink`
 VALUES ('7044aa70-cb94-11ed-8c20-2016b9c02335', 1, NULL, 'starter', '2', NULL, '7044835f-cb94-11ed-8c20-2016b9c02335',
         NULL, NULL, NULL, NULL, NULL);
@@ -3395,11 +3325,6 @@ VALUES ('66cd7aa1-ca2b-11ed-9c60-2016b9c02335', 1, '66cd7a9d-ca2b-11ed-9c60-2016
         NULL, NULL, '社区管理员', NULL, NULL, 'Activity_13uq05m', NULL, '1', NULL, 50, '2023-03-24 18:05:27.550', NULL,
         NULL, 1, '', NULL, NULL, 1, 0, 0, 0);
 INSERT INTO `act_ru_task`
-VALUES ('702236ea-d12c-11ed-be2b-2016b9c02335', 1, 'e8597424-cbe1-11ed-a77c-2016b9c02335',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL, NULL, NULL, NULL,
-        NULL, NULL, '结果检测', NULL, NULL, 'Activity_1ne3thd', NULL, '2', NULL, 50, '2023-04-02 16:00:30.841', NULL,
-        NULL, 1, '', NULL, NULL, 1, 0, 0, 0);
-INSERT INTO `act_ru_task`
 VALUES ('705d1480-cb94-11ed-8c20-2016b9c02335', 1, '7056abdc-cb94-11ed-8c20-2016b9c02335',
         '7044835f-cb94-11ed-8c20-2016b9c02335', 'check_in:1:1c85c30e-cb94-11ed-8c20-2016b9c02335', NULL, NULL, NULL,
         NULL, NULL, NULL, '住户', NULL, NULL, 'Activity_06tm4j2', NULL, '4', NULL, 50, '2023-03-26 13:09:51.884', NULL,
@@ -3448,6 +3373,11 @@ INSERT INTO `act_ru_task`
 VALUES ('e5a8bdb4-ca0d-11ed-b90d-2016b9c02335', 1, 'e5a8bdb0-ca0d-11ed-b90d-2016b9c02335',
         'e596e355-ca0d-11ed-b90d-2016b9c02335', 'leave:5:d96565c4-ca0d-11ed-b90d-2016b9c02335', NULL, NULL, NULL, NULL,
         NULL, NULL, '社区管理员', NULL, NULL, 'Activity_13uq05m', NULL, '1', NULL, 50, '2023-03-24 14:34:15.478', NULL,
+        NULL, 1, '', NULL, NULL, 1, 0, 0, 0);
+INSERT INTO `act_ru_task`
+VALUES ('e86e0d98-cbe1-11ed-a77c-2016b9c02335', 1, 'e8597424-cbe1-11ed-a77c-2016b9c02335',
+        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', NULL, NULL, NULL, NULL,
+        NULL, NULL, '员工报修', NULL, NULL, 'Activity_12hhoy5', NULL, '3', NULL, 50, '2023-03-26 22:24:24.571', NULL,
         NULL, 1, '', NULL, NULL, 1, 0, 0, 0);
 INSERT INTO `act_ru_task`
 VALUES ('e9e5ec25-cd5f-11ed-997c-2016b9c02335', 1, 'e9d71f11-cd5f-11ed-997c-2016b9c02335',
@@ -4197,7 +4127,7 @@ CREATE TABLE `bpm_task_ext`
     `tenant_id`             bigint(20)                                                    NOT NULL DEFAULT 0 COMMENT '租户编号',
     PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 366
+  AUTO_INCREMENT = 364
   CHARACTER SET = utf8mb4
   COLLATE = utf8mb4_unicode_ci COMMENT = '工作流的流程任务的拓展表'
   ROW_FORMAT = COMPACT;
@@ -4278,9 +4208,9 @@ VALUES (358, 2, '员工报修', '996c6713-cb94-11ed-8c20-2016b9c02335', 1, NULL,
         '996b7ca7-cb94-11ed-8c20-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', '1',
         '2023-03-26 13:11:01', '1', '2023-03-26 13:11:01', b'0', 0);
 INSERT INTO `bpm_task_ext`
-VALUES (359, 3, '员工报修', 'e86e0d98-cbe1-11ed-a77c-2016b9c02335', 2, '23123', '2023-04-02 15:59:52',
+VALUES (359, 3, '员工报修', 'e86e0d98-cbe1-11ed-a77c-2016b9c02335', 1, NULL, NULL,
         'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', '2',
-        '2023-03-26 22:24:25', '3', '2023-04-02 15:59:52', b'0', 0);
+        '2023-03-26 22:24:25', '2', '2023-03-26 22:24:25', b'0', 0);
 INSERT INTO `bpm_task_ext`
 VALUES (360, 3, '员工报修', '59c08fe7-cbe3-11ed-a77c-2016b9c02335', 2, '好好', '2023-03-26 22:43:16',
         '59bfa57b-cbe3-11ed-a77c-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', '2',
@@ -4297,14 +4227,6 @@ INSERT INTO `bpm_task_ext`
 VALUES (363, 4, '住户', 'e9e5ec25-cd5f-11ed-997c-2016b9c02335', 1, NULL, NULL, 'e9d152a4-cd5f-11ed-997c-2016b9c02335',
         'check_in:1:1c85c30e-cb94-11ed-8c20-2016b9c02335', '1', '2023-03-28 19:58:55', '1', '2023-03-28 19:58:55', b'0',
         0);
-INSERT INTO `bpm_task_ext`
-VALUES (364, 3, '设备维修', '58d1bd35-d12c-11ed-be2b-2016b9c02335', 2, '撒大声地', '2023-04-02 16:00:31',
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', '3',
-        '2023-04-02 15:59:52', '3', '2023-04-02 16:00:31', b'0', 0);
-INSERT INTO `bpm_task_ext`
-VALUES (365, 2, '结果检测', '702236ea-d12c-11ed-be2b-2016b9c02335', 1, NULL, NULL,
-        'e855f1ac-cbe1-11ed-a77c-2016b9c02335', 'repair:2:b58c1943-cb90-11ed-aa70-2016b9c02335', '3',
-        '2023-04-02 16:00:31', '3', '2023-04-02 16:00:31', b'0', 0);
 
 -- ----------------------------
 -- Table structure for bpm_user_group
@@ -4337,6 +4259,42 @@ INSERT INTO `bpm_user_group`
 VALUES (111, '组一', '组一描述', '[3]', 0, '1', '2022-08-18 17:39:46', '1', '2022-08-18 17:39:46', b'0', 0);
 INSERT INTO `bpm_user_group`
 VALUES (112, '组二', '组二', '[2,4]', 0, '1', '2022-08-18 17:42:08', '1', '2022-08-18 17:42:08', b'0', 0);
+
+-- ----------------------------
+-- Table structure for device_manage
+-- ----------------------------
+DROP TABLE IF EXISTS `device_manage`;
+CREATE TABLE `device_manage`
+(
+    `device_id`               int(11)                                                 NOT NULL AUTO_INCREMENT,
+    `device_name`             varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL COMMENT '设备设施名称',
+    `device_no`               varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL COMMENT '设备设施编号',
+    `device_type`             varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL     DEFAULT NULL COMMENT '设备设施类型',
+    `device_state`            varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL DEFAULT '0' COMMENT '设备设施状态',
+    `device_location`         varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '设备设施位置',
+    `device_user`             varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL COMMENT '设备设施责任人',
+    `device_buy_time`         date                                                    NOT NULL COMMENT '设备设施购买时间',
+    `device_warranty_period`  date                                                    NOT NULL COMMENT '设备设施保修期限',
+    `device_maintain_records` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL     DEFAULT NULL COMMENT '设备设施维护记录',
+    `device_use_desc`         varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL     DEFAULT NULL COMMENT '设备设施使用说明书',
+    `del_flag`                char(1) CHARACTER SET utf8 COLLATE utf8_general_ci      NULL     DEFAULT '0' COMMENT '删除标志（0代表存在 2代表删除）',
+    `create_by`               varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL     DEFAULT '' COMMENT '创建者',
+    `create_time`             datetime                                                NULL     DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `update_by`               varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL     DEFAULT '' COMMENT '更新者',
+    `update_time`             datetime                                                NULL     DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    PRIMARY KEY (`device_id`) USING BTREE
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 2
+  CHARACTER SET = utf8
+  COLLATE = utf8_general_ci COMMENT = '设备设施管理'
+  ROW_FORMAT = DYNAMIC;
+
+-- ----------------------------
+-- Records of device_manage
+-- ----------------------------
+INSERT INTO `device_manage`
+VALUES (1, '111', '1', NULL, '正常', '111', '111', '2023-04-24', '2023-04-25', '111', '111', '0', '',
+        '2023-04-24 14:37:13', '', '2023-04-25 19:45:35');
 
 -- ----------------------------
 -- Table structure for flw_channel_definition
@@ -4586,7 +4544,7 @@ CREATE TABLE `gen_table`
     `remark`            varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL DEFAULT NULL COMMENT '备注',
     PRIMARY KEY (`table_id`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 19
+  AUTO_INCREMENT = 11
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '代码生成业务表'
   ROW_FORMAT = COMPACT;
@@ -4595,8 +4553,8 @@ CREATE TABLE `gen_table`
 -- Records of gen_table
 -- ----------------------------
 INSERT INTO `gen_table`
-VALUES (18, 'parking_spaces', '车位信息', NULL, NULL, 'ParkingSpaces', 'crud', 'com.ruoyi.community', 'community',
-        'spaces', '车位信息', 'yanghua', '0', '/', '{}', 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09',
+VALUES (10, 'device_manage', '设备设施管理', NULL, NULL, 'DeviceManage', 'crud', 'com.ruoyi.community', 'community',
+        'manage', '设备设施管理', 'yanghua', '0', '/', '{}', 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16',
         NULL);
 
 -- ----------------------------
@@ -4629,7 +4587,7 @@ CREATE TABLE `gen_table_column`
     `update_time`    datetime                                                NULL DEFAULT NULL COMMENT '更新时间',
     PRIMARY KEY (`column_id`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 222
+  AUTO_INCREMENT = 145
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '代码生成业务表字段'
   ROW_FORMAT = COMPACT;
@@ -4638,38 +4596,54 @@ CREATE TABLE `gen_table_column`
 -- Records of gen_table_column
 -- ----------------------------
 INSERT INTO `gen_table_column`
-VALUES (211, '18', 'park_id', '主键', 'int(10) unsigned', 'Integer', 'parkId', '1', '1', '0', '1', NULL, NULL, NULL,
-        'EQ', 'input', '', 1, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (129, '10', 'device_id', '设备id', 'int(11)', 'Long', 'deviceId', '1', '1', '0', '1', NULL, NULL, NULL, 'EQ',
+        'input', '', 1, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (212, '18', 'parking_space_id', '车位ID', 'varchar(255)', 'String', 'parkingSpaceId', '0', '0', '1', '1', '1',
-        '1', '1', 'EQ', 'input', '', 2, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (130, '10', 'device_name', '设备名称', 'varchar(50)', 'String', 'deviceName', '0', '0', '0', '1', '1', '1', '1',
+        'LIKE', 'input', '', 2, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (213, '18', 'user_id', '用户id', 'int(11)', 'Long', 'userId', '0', '0', '1', '1', '1', '1', '1', 'EQ', 'input',
-        '', 3, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (131, '10', 'device_no', '设备设施编号', 'varchar(20)', 'String', 'deviceNo', '0', '0', '0', '1', '1', '1', '1',
+        'EQ', 'input', '', 3, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (214, '18', 'parking_space_number', '车位号', 'varchar(255)', 'String', 'parkingSpaceNumber', '0', '0', '0', '1',
-        '1', '1', '1', 'EQ', 'input', '', 4, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (132, '10', 'device_type', '设备设施类型', 'varchar(20)', 'String', 'deviceType', '0', '0', '1', '1', '1', '1',
+        '1', 'EQ', 'select', 'device_type', 4, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (215, '18', 'status', '是否停用', 'int(11)', 'Long', 'status', '0', '0', '1', '1', '1', '1', '1', 'EQ', 'radio',
-        'sys_normal_disable', 5, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (133, '10', 'device_state', '设备设施状态', 'varchar(20)', 'String', 'deviceState', '0', '0', '0', '1', '1', '1',
+        '1', 'EQ', 'select', 'sys_common_status', 5, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (216, '18', 'rent', '是否租用', 'varchar(255)', 'String', 'rent', '0', '0', '1', '1', '1', '1', '1', 'EQ',
-        'radio', 'sys_yes_no', 6, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (134, '10', 'device_location', '设备设施位置', 'varchar(100)', 'String', 'deviceLocation', '0', '0', '0', '1',
+        '1', '1', '1', 'EQ', 'input', '', 6, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (217, '18', 'create_by', '创建者', 'varchar(255)', 'String', 'createBy', '0', '0', '1', '1', NULL, NULL, NULL,
-        'EQ', 'input', '', 7, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (135, '10', 'device_user', '设备设施责任人', 'varchar(50)', 'String', 'deviceUser', '0', '0', '0', '1', '1', '1',
+        '1', 'EQ', 'input', '', 7, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (218, '18', 'create_time', '创建时间', 'datetime', 'Date', 'createTime', '0', '0', '1', '1', NULL, NULL, NULL,
-        'EQ', 'datetime', '', 8, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (136, '10', 'device_buy_time', '设备设施购买时间', 'date', 'Date', 'deviceBuyTime', '0', '0', '0', '1', '1', '1',
+        '1', 'EQ', 'datetime', '', 8, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (219, '18', 'update_by', '更新时间', 'datetime', 'Date', 'updateBy', '0', '0', '1', '1', '1', NULL, NULL, 'EQ',
-        'datetime', '', 9, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (137, '10', 'device_warranty_period', '设备设施保修期限', 'date', 'Date', 'deviceWarrantyPeriod', '0', '0', '0',
+        '1', '1', '1', '1', 'EQ', 'datetime', '', 9, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (220, '18', 'update_time', '更新者', 'datetime', 'Date', 'updateTime', '0', '0', '1', '1', '1', NULL, NULL, 'EQ',
-        'datetime', '', 10, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (138, '10', 'device_maintain_records', '设备设施维护记录', 'varchar(500)', 'String', 'deviceMaintainRecords',
+        '0', '0', '1', '1', '1', '1', '1', 'EQ', 'textarea', '', 10, 'admin', '2023-04-25 19:50:58', '',
+        '2023-04-25 20:00:16');
 INSERT INTO `gen_table_column`
-VALUES (221, '18', 'remark', '备注', 'varchar(255)', 'String', 'remark', '0', '0', '0', '1', '1', '1', NULL, 'EQ',
-        'input', '', 11, 'admin', '2023-04-12 19:53:20', '', '2023-04-12 19:56:09');
+VALUES (139, '10', 'device_use_desc', '设备设施使用说明书', 'varchar(100)', 'String', 'deviceUseDesc', '0', '0', '1',
+        '1', '1', '1', '1', 'EQ', 'input', '', 11, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
+INSERT INTO `gen_table_column`
+VALUES (140, '10', 'del_flag', '删除标志（0代表存在 2代表删除）', 'char(1)', 'String', 'delFlag', '0', '0', '1', '1',
+        NULL, NULL, NULL, 'EQ', 'input', '', 12, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
+INSERT INTO `gen_table_column`
+VALUES (141, '10', 'create_by', '创建者', 'varchar(64)', 'String', 'createBy', '0', '0', '1', '1', NULL, NULL, NULL,
+        'EQ', 'input', '', 13, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
+INSERT INTO `gen_table_column`
+VALUES (142, '10', 'create_time', '创建时间', 'datetime', 'Date', 'createTime', '0', '0', '1', '1', NULL, NULL, NULL,
+        'EQ', 'datetime', '', 14, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
+INSERT INTO `gen_table_column`
+VALUES (143, '10', 'update_by', '更新者', 'varchar(64)', 'String', 'updateBy', '0', '0', '1', '1', '1', NULL, NULL,
+        'EQ', 'input', '', 15, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
+INSERT INTO `gen_table_column`
+VALUES (144, '10', 'update_time', '更新时间', 'datetime', 'Date', 'updateTime', '0', '0', '1', '1', '1', NULL, NULL,
+        'EQ', 'datetime', '', 16, 'admin', '2023-04-25 19:50:58', '', '2023-04-25 20:00:16');
 
 -- ----------------------------
 -- Table structure for parking_spaces
@@ -4699,7 +4673,7 @@ CREATE TABLE `parking_spaces`
 -- Records of parking_spaces
 -- ----------------------------
 INSERT INTO `parking_spaces`
-VALUES (2, '金色家园001', 1, '川W88888', 1, 'Y', NULL, NULL, NULL, '2023-04-12 21:00:29', 'hello');
+VALUES (2, '金色家园001', 1, '粤T15H41', 1, 'Y', NULL, NULL, NULL, '2023-04-12 21:00:29', 'hello');
 INSERT INTO `parking_spaces`
 VALUES (3, '金色家园001', 2, '川W9999', 0, 'Y', NULL, NULL, NULL, '2023-04-12 20:43:14', 'world');
 
@@ -5124,7 +5098,7 @@ CREATE TABLE `sys_dict_data`
     `remark`      varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
     PRIMARY KEY (`dict_code`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 54
+  AUTO_INCREMENT = 58
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '字典数据表'
   ROW_FORMAT = COMPACT;
@@ -5287,6 +5261,17 @@ VALUES (52, 2, '事假', '2', 'bpm_oa_leave_type', NULL, 'info', 'N', '0', 'admi
 INSERT INTO `sys_dict_data`
 VALUES (53, 3, '婚假', '3', 'bpm_oa_leave_type', NULL, 'warning', 'N', '0', 'admin', '2022-09-01 09:43:39', '', NULL,
         '婚假');
+INSERT INTO `sys_dict_data`
+VALUES (54, 0, '温度传感器', '1', 'device_type', NULL, 'default', 'N', '0', 'admin', NULL, 'admin',
+        '2023-04-25 23:14:01', '温度传感器');
+INSERT INTO `sys_dict_data`
+VALUES (55, 0, '风扇', '2', 'device_type', NULL, 'default', 'N', '0', 'admin', '2023-04-24 15:43:17', '', NULL, NULL);
+INSERT INTO `sys_dict_data`
+VALUES (56, 0, '湿度传感器', '3', 'device_type', NULL, 'default', 'N', '0', 'admin', '2023-04-25 23:14:56', '', NULL,
+        '湿度传感器');
+INSERT INTO `sys_dict_data`
+VALUES (57, 0, '光照传感器', '4', 'device_type', NULL, 'default', 'N', '0', 'admin', '2023-04-25 23:15:27', '', NULL,
+        '光照传感器');
 
 -- ----------------------------
 -- Table structure for sys_dict_type
@@ -5306,7 +5291,7 @@ CREATE TABLE `sys_dict_type`
     PRIMARY KEY (`dict_id`) USING BTREE,
     UNIQUE INDEX `dict_type` (`dict_type`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 19
+  AUTO_INCREMENT = 20
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '字典类型表'
   ROW_FORMAT = COMPACT;
@@ -5354,6 +5339,8 @@ VALUES (17, '任务分配自定义脚本', 'bpm_task_assign_script', '0', 'admin
         '任务分配自定义脚本');
 INSERT INTO `sys_dict_type`
 VALUES (18, 'OA 请假类型', 'bpm_oa_leave_type', '0', 'admin', '2022-09-01 09:42:32', '', NULL, 'OA 请假类型');
+INSERT INTO `sys_dict_type`
+VALUES (19, '设备设施类型', 'device_type', '0', 'admin', '2023-04-24 15:22:18', '', NULL, '设备设施类型');
 
 -- ----------------------------
 -- Table structure for sys_job
@@ -5436,7 +5423,7 @@ CREATE TABLE `sys_logininfor`
     `login_time`     datetime                                                NULL DEFAULT NULL COMMENT '访问时间',
     PRIMARY KEY (`info_id`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 359
+  AUTO_INCREMENT = 294
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '系统访问记录'
   ROW_FORMAT = COMPACT;
@@ -5798,187 +5785,45 @@ VALUES (272, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '
 INSERT INTO `sys_logininfor`
 VALUES (273, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-03-29 22:23:49');
 INSERT INTO `sys_logininfor`
-VALUES (274, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-03-30 22:10:19');
+VALUES (274, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-01 12:59:59');
 INSERT INTO `sys_logininfor`
-VALUES (275, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-03-31 22:12:13');
+VALUES (275, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-01 14:50:20');
 INSERT INTO `sys_logininfor`
-VALUES (276, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-01 11:20:39');
+VALUES (276, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 07:53:58');
 INSERT INTO `sys_logininfor`
-VALUES (277, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-01 11:41:05');
+VALUES (277, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 10:17:17');
 INSERT INTO `sys_logininfor`
-VALUES (278, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-01 11:41:12');
+VALUES (278, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 10:49:04');
 INSERT INTO `sys_logininfor`
-VALUES (279, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-01 12:27:20');
+VALUES (279, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 12:22:49');
 INSERT INTO `sys_logininfor`
-VALUES (280, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-01 12:27:20');
+VALUES (280, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 13:10:15');
 INSERT INTO `sys_logininfor`
-VALUES (281, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-01 12:27:20');
+VALUES (281, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-24 14:34:30');
 INSERT INTO `sys_logininfor`
-VALUES (282, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-01 14:25:53');
+VALUES (282, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 14:34:33');
 INSERT INTO `sys_logininfor`
-VALUES (283, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-01 16:15:42');
+VALUES (283, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 17:00:13');
 INSERT INTO `sys_logininfor`
-VALUES (284, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-01 22:36:01');
+VALUES (284, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-24 23:01:08');
 INSERT INTO `sys_logininfor`
-VALUES (285, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 12:20:10');
+VALUES (285, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-25 18:26:34');
 INSERT INTO `sys_logininfor`
-VALUES (286, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 14:15:39');
+VALUES (286, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-25 19:16:43');
 INSERT INTO `sys_logininfor`
-VALUES (287, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 15:43:02');
+VALUES (287, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-25 23:12:55');
 INSERT INTO `sys_logininfor`
-VALUES (288, 'ruoyi', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：ruoyi 不存在',
-        '2023-04-02 15:54:02');
+VALUES (288, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-27 22:43:32');
 INSERT INTO `sys_logininfor`
-VALUES (289, 'test', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '密码输入错误1次', '2023-04-02 15:54:06');
+VALUES (289, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-27 23:25:02');
 INSERT INTO `sys_logininfor`
-VALUES (290, 'test', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '用户不存在/密码错误',
-        '2023-04-02 15:54:06');
+VALUES (290, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-28 00:05:11');
 INSERT INTO `sys_logininfor`
-VALUES (291, 'test', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 15:54:13');
+VALUES (291, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-28 00:05:14');
 INSERT INTO `sys_logininfor`
-VALUES (292, 'test', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 15:54:32');
+VALUES (292, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-28 00:07:29');
 INSERT INTO `sys_logininfor`
-VALUES (293, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '密码输入错误1次', '2023-04-02 15:55:01');
-INSERT INTO `sys_logininfor`
-VALUES (294, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '用户不存在/密码错误', '2023-04-02 15:55:01');
-INSERT INTO `sys_logininfor`
-VALUES (295, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 15:56:25');
-INSERT INTO `sys_logininfor`
-VALUES (296, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 15:59:18');
-INSERT INTO `sys_logininfor`
-VALUES (297, 'puyg', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 15:59:35');
-INSERT INTO `sys_logininfor`
-VALUES (298, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 16:01:42');
-INSERT INTO `sys_logininfor`
-VALUES (299, 'ruoyi', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：ruoyi 不存在',
-        '2023-04-02 16:01:48');
-INSERT INTO `sys_logininfor`
-VALUES (300, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 16:01:53');
-INSERT INTO `sys_logininfor`
-VALUES (301, 'puyg', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 16:07:50');
-INSERT INTO `sys_logininfor`
-VALUES (302, 'ruoyi', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：ruoyi 不存在',
-        '2023-04-02 16:07:55');
-INSERT INTO `sys_logininfor`
-VALUES (303, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '密码输入错误1次', '2023-04-02 16:08:02');
-INSERT INTO `sys_logininfor`
-VALUES (304, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '用户不存在/密码错误', '2023-04-02 16:08:02');
-INSERT INTO `sys_logininfor`
-VALUES (305, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 16:08:09');
-INSERT INTO `sys_logininfor`
-VALUES (306, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 16:12:05');
-INSERT INTO `sys_logininfor`
-VALUES (307, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 16:12:09');
-INSERT INTO `sys_logininfor`
-VALUES (308, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 16:15:47');
-INSERT INTO `sys_logininfor`
-VALUES (309, 'ruoyi', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：ruoyi 不存在',
-        '2023-04-02 16:15:58');
-INSERT INTO `sys_logininfor`
-VALUES (310, 'ruoyi', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：ruoyi 不存在',
-        '2023-04-02 16:16:01');
-INSERT INTO `sys_logininfor`
-VALUES (311, 'guanxing', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：guanxing 不存在',
-        '2023-04-02 16:16:05');
-INSERT INTO `sys_logininfor`
-VALUES (312, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '用户不存在/密码错误', '2023-04-02 16:16:15');
-INSERT INTO `sys_logininfor`
-VALUES (313, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '密码输入错误1次', '2023-04-02 16:16:15');
-INSERT INTO `sys_logininfor`
-VALUES (314, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 16:16:22');
-INSERT INTO `sys_logininfor`
-VALUES (315, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 16:17:49');
-INSERT INTO `sys_logininfor`
-VALUES (316, 'puyg', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 16:18:00');
-INSERT INTO `sys_logininfor`
-VALUES (317, 'puyg', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 16:18:32');
-INSERT INTO `sys_logininfor`
-VALUES (318, 'guanxing', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：guanxing 不存在',
-        '2023-04-02 16:18:42');
-INSERT INTO `sys_logininfor`
-VALUES (319, 'ruoyi', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：ruoyi 不存在',
-        '2023-04-02 16:18:45');
-INSERT INTO `sys_logininfor`
-VALUES (320, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '用户不存在/密码错误', '2023-04-02 16:18:49');
-INSERT INTO `sys_logininfor`
-VALUES (321, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '密码输入错误1次', '2023-04-02 16:18:49');
-INSERT INTO `sys_logininfor`
-VALUES (322, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '密码输入错误2次', '2023-04-02 16:18:52');
-INSERT INTO `sys_logininfor`
-VALUES (323, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '用户不存在/密码错误', '2023-04-02 16:18:52');
-INSERT INTO `sys_logininfor`
-VALUES (324, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '密码输入错误3次', '2023-04-02 16:19:11');
-INSERT INTO `sys_logininfor`
-VALUES (325, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '用户不存在/密码错误', '2023-04-02 16:19:11');
-INSERT INTO `sys_logininfor`
-VALUES (326, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 16:19:17');
-INSERT INTO `sys_logininfor`
-VALUES (327, 'ry', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-02 16:20:05');
-INSERT INTO `sys_logininfor`
-VALUES (328, 'puyg', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-02 16:20:14');
-INSERT INTO `sys_logininfor`
-VALUES (329, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-05 11:35:02');
-INSERT INTO `sys_logininfor`
-VALUES (330, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-05 19:20:46');
-INSERT INTO `sys_logininfor`
-VALUES (331, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-05 21:11:47');
-INSERT INTO `sys_logininfor`
-VALUES (332, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-05 21:11:47');
-INSERT INTO `sys_logininfor`
-VALUES (333, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-05 21:11:49');
-INSERT INTO `sys_logininfor`
-VALUES (334, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-08 10:10:33');
-INSERT INTO `sys_logininfor`
-VALUES (335, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-08 11:38:45');
-INSERT INTO `sys_logininfor`
-VALUES (336, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-08 12:53:17');
-INSERT INTO `sys_logininfor`
-VALUES (337, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-08 13:31:39');
-INSERT INTO `sys_logininfor`
-VALUES (338, '张三', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：张三 不存在',
-        '2023-04-08 13:31:50');
-INSERT INTO `sys_logininfor`
-VALUES (339, 'zhangsan', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：zhangsan 不存在',
-        '2023-04-08 13:32:22');
-INSERT INTO `sys_logininfor`
-VALUES (340, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-08 13:32:46');
-INSERT INTO `sys_logininfor`
-VALUES (341, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-08 17:39:57');
-INSERT INTO `sys_logininfor`
-VALUES (342, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-09 21:18:33');
-INSERT INTO `sys_logininfor`
-VALUES (343, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-09 22:50:07');
-INSERT INTO `sys_logininfor`
-VALUES (344, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-10 22:54:20');
-INSERT INTO `sys_logininfor`
-VALUES (345, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-11 17:51:37');
-INSERT INTO `sys_logininfor`
-VALUES (346, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-11 18:16:57');
-INSERT INTO `sys_logininfor`
-VALUES (347, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-11 18:25:08');
-INSERT INTO `sys_logininfor`
-VALUES (348, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-11 18:34:13');
-INSERT INTO `sys_logininfor`
-VALUES (349, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-11 18:34:16');
-INSERT INTO `sys_logininfor`
-VALUES (350, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-11 18:58:30');
-INSERT INTO `sys_logininfor`
-VALUES (351, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-11 18:58:35');
-INSERT INTO `sys_logininfor`
-VALUES (352, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '退出成功', '2023-04-11 19:09:50');
-INSERT INTO `sys_logininfor`
-VALUES (353, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-11 19:28:58');
-INSERT INTO `sys_logininfor`
-VALUES (354, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-11 20:42:38');
-INSERT INTO `sys_logininfor`
-VALUES (355, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-11 21:21:21');
-INSERT INTO `sys_logininfor`
-VALUES (356, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-12 19:21:50');
-INSERT INTO `sys_logininfor`
-VALUES (357, 'test', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '1', '登录用户：test 不存在',
-        '2023-04-12 20:36:39');
-INSERT INTO `sys_logininfor`
-VALUES (358, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-12 20:36:45');
+VALUES (293, 'admin', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', '0', '登录成功', '2023-04-28 00:07:37');
 
 -- ----------------------------
 -- Table structure for sys_menu
@@ -6007,7 +5852,7 @@ CREATE TABLE `sys_menu`
     `remark`      varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '备注',
     PRIMARY KEY (`menu_id`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 2084
+  AUTO_INCREMENT = 2071
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '菜单权限表'
   ROW_FORMAT = COMPACT;
@@ -6077,7 +5922,7 @@ VALUES (116, '代码生成', 3, 2, 'gen', 'tool/gen/index', '', 1, 0, 'C', '0', 
         '2022-08-09 10:14:25', '', NULL, '代码生成菜单');
 INSERT INTO `sys_menu`
 VALUES (117, '系统接口', 3, 3, 'swagger', 'tool/swagger/index', '', 1, 0, 'C', '0', '0', 'tool:swagger:list', 'swagger',
-        'admin', '2022-08-09 10:14:25', 'admin', '2023-04-11 18:46:05', '系统接口菜单');
+        'admin', '2022-08-09 10:14:25', '', NULL, '系统接口菜单');
 INSERT INTO `sys_menu`
 VALUES (500, '操作日志', 108, 1, 'operlog', 'monitor/operlog/index', '', 1, 0, 'C', '0', '0', 'monitor:operlog:list',
         'form', 'admin', '2022-08-09 10:14:25', '', NULL, '操作日志菜单');
@@ -6334,8 +6179,8 @@ INSERT INTO `sys_menu`
 VALUES (2021, '流程任务分配规则更新', 2011, 10, '', NULL, NULL, 1, 0, 'F', '0', '0', 'bpm:task-assign-rule:update', '#',
         'admin', '2022-08-18 17:10:30', '', NULL, '');
 INSERT INTO `sys_menu`
-VALUES (2022, '用户分组', 2004, 3, 'user-group', 'bpm/group/index', NULL, 1, 0, 'C', '0', '0', NULL, 'peoples', 'admin',
-        '2022-08-18 17:12:49', '', NULL, '');
+VALUES (2022, '用户分组', 2004, 3, 'user-group', 'bpm/group/index', NULL, 1, 0, 'C', '0', '1', '', 'peoples', 'admin',
+        '2022-08-18 17:12:49', 'admin', '2023-04-25 23:21:03', '');
 INSERT INTO `sys_menu`
 VALUES (2023, '用户组查询', 2022, 1, '', NULL, NULL, 1, 0, 'F', '0', '0', 'bpm:user-group:query', '#', 'admin',
         '2022-08-18 17:13:08', '', NULL, '');
@@ -6391,45 +6236,60 @@ INSERT INTO `sys_menu`
 VALUES (2040, '请假申请创建', 2038, 2, '', NULL, NULL, 1, 0, 'F', '0', '0', 'bpm:oa-leave:create', '#', 'admin',
         '2022-09-01 09:25:23', '', NULL, '');
 INSERT INTO `sys_menu`
-VALUES (2041, '分配用户', 100, 10, '', NULL, NULL, 1, 0, 'F', '0', '0', 'system:role:edit', '#', 'admin',
-        '2023-04-02 16:15:32', '', NULL, '');
+VALUES (2041, '设备管理', 1, 1, 'manage', 'community/manage/index', NULL, 1, 0, 'C', '0', '0', 'community:manage:list',
+        'tool', 'admin', '2023-04-24 13:09:16', 'admin', '2023-04-24 23:19:52', '设备设施管理菜单');
 INSERT INTO `sys_menu`
-VALUES (2066, '住户信息', 1, 1, 'residents', 'community/residents/index', NULL, 1, 0, 'C', '0', '0',
-        'community:residents:list', 'people', 'admin', '2023-04-08 17:52:12', 'admin', '2023-04-08 17:55:49',
+VALUES (2042, '设备设施管理查询', 2041, 1, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:manage:query', '#', 'admin',
+        '2023-04-24 13:09:16', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2043, '设备设施管理新增', 2041, 2, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:manage:add', '#', 'admin',
+        '2023-04-24 13:09:16', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2044, '设备设施管理修改', 2041, 3, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:manage:edit', '#', 'admin',
+        '2023-04-24 13:09:16', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2045, '设备设施管理删除', 2041, 4, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:manage:remove', '#', 'admin',
+        '2023-04-24 13:09:16', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2046, '设备设施管理导出', 2041, 5, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:manage:export', '#', 'admin',
+        '2023-04-24 13:09:16', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2047, '车位信息', 1, 1, 'spaces', 'community/spaces/index', NULL, 1, 0, 'C', '0', '0', 'community:spaces:list',
+        'shopping', 'admin', '2023-04-24 23:12:12', 'admin', '2023-04-24 23:18:50', '车位信息菜单');
+INSERT INTO `sys_menu`
+VALUES (2048, '车位信息查询', 2047, 1, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:query', '#', 'admin',
+        '2023-04-24 23:12:12', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2049, '车位信息新增', 2047, 2, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:add', '#', 'admin',
+        '2023-04-24 23:12:12', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2050, '车位信息修改', 2047, 3, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:edit', '#', 'admin',
+        '2023-04-24 23:12:12', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2051, '车位信息删除', 2047, 4, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:remove', '#', 'admin',
+        '2023-04-24 23:12:12', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2052, '车位信息导出', 2047, 5, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:export', '#', 'admin',
+        '2023-04-24 23:12:12', '', NULL, '');
+INSERT INTO `sys_menu`
+VALUES (2065, '住户信息', 1, 1, 'residents', 'community/residents/index', NULL, 1, 0, 'C', '0', '0',
+        'community:residents:list', 'people', 'admin', '2023-04-24 23:14:19', 'admin', '2023-04-24 23:18:22',
         '住户信息菜单');
 INSERT INTO `sys_menu`
-VALUES (2067, '住户信息查询', 2066, 1, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:query', '#', 'admin',
-        '2023-04-08 17:52:12', '', NULL, '');
+VALUES (2066, '住户信息查询', 2065, 1, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:query', '#', 'admin',
+        '2023-04-24 23:14:19', '', NULL, '');
 INSERT INTO `sys_menu`
-VALUES (2068, '住户信息新增', 2066, 2, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:add', '#', 'admin',
-        '2023-04-08 17:52:12', '', NULL, '');
+VALUES (2067, '住户信息新增', 2065, 2, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:add', '#', 'admin',
+        '2023-04-24 23:14:19', '', NULL, '');
 INSERT INTO `sys_menu`
-VALUES (2069, '住户信息修改', 2066, 3, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:edit', '#', 'admin',
-        '2023-04-08 17:52:12', '', NULL, '');
+VALUES (2068, '住户信息修改', 2065, 3, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:edit', '#', 'admin',
+        '2023-04-24 23:14:19', '', NULL, '');
 INSERT INTO `sys_menu`
-VALUES (2070, '住户信息删除', 2066, 4, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:remove', '#', 'admin',
-        '2023-04-08 17:52:12', '', NULL, '');
+VALUES (2069, '住户信息删除', 2065, 4, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:remove', '#', 'admin',
+        '2023-04-24 23:14:19', '', NULL, '');
 INSERT INTO `sys_menu`
-VALUES (2071, '住户信息导出', 2066, 5, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:export', '#', 'admin',
-        '2023-04-08 17:52:12', '', NULL, '');
-INSERT INTO `sys_menu`
-VALUES (2078, '车位信息', 1, 2, 'spaces', 'community/spaces/index', NULL, 1, 0, 'C', '0', '0', 'community:spaces:list',
-        'email', 'admin', '2023-04-11 18:18:25', 'admin', '2023-04-11 18:38:57', '车位信息菜单');
-INSERT INTO `sys_menu`
-VALUES (2079, '车位信息查询', 2078, 1, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:query', '#', 'admin',
-        '2023-04-11 18:18:25', '', NULL, '');
-INSERT INTO `sys_menu`
-VALUES (2080, '车位信息新增', 2078, 2, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:add', '#', 'admin',
-        '2023-04-11 18:18:25', '', NULL, '');
-INSERT INTO `sys_menu`
-VALUES (2081, '车位信息修改', 2078, 3, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:edit', '#', 'admin',
-        '2023-04-11 18:18:25', '', NULL, '');
-INSERT INTO `sys_menu`
-VALUES (2082, '车位信息删除', 2078, 4, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:remove', '#', 'admin',
-        '2023-04-11 18:18:25', '', NULL, '');
-INSERT INTO `sys_menu`
-VALUES (2083, '车位信息导出', 2078, 5, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:spaces:export', '#', 'admin',
-        '2023-04-11 18:18:25', '', NULL, '');
+VALUES (2070, '住户信息导出', 2065, 5, '#', '', NULL, 1, 0, 'F', '0', '0', 'community:residents:export', '#', 'admin',
+        '2023-04-24 23:14:19', '', NULL, '');
 
 -- ----------------------------
 -- Table structure for sys_notice
@@ -6493,7 +6353,7 @@ CREATE TABLE `sys_oper_log`
     `oper_time`      datetime                                                 NULL DEFAULT NULL COMMENT '操作时间',
     PRIMARY KEY (`oper_id`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 405
+  AUTO_INCREMENT = 338
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '操作日志记录'
   ROW_FORMAT = COMPACT;
@@ -7795,620 +7655,332 @@ VALUES (266, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserControll
         'Cannot invoke \"String.toString()\" because the return value of \"com.ruoyi.common.core.domain.entity.SysUser.getEmail()\" is null',
         '2023-03-29 21:25:54');
 INSERT INTO `sys_oper_log`
-VALUES (267, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP', '{\"admin\":false,\"updateBy\":\"admin\",\"userId\":7}', NULL,
-        1,
-        'Cannot invoke \"org.springframework.mail.javamail.JavaMailSender.send(org.springframework.mail.SimpleMailMessage)\" because \"this.javaMailSender\" is null',
-        '2023-03-30 22:40:10');
+VALUES (267, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
+        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"device_manage\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
+        NULL, '2023-04-24 10:56:45');
 INSERT INTO `sys_oper_log`
-VALUES (268, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP', '{\"admin\":false,\"updateBy\":\"admin\",\"userId\":7}', NULL,
-        1,
-        'Cannot invoke \"org.springframework.mail.javamail.JavaMailSender.send(org.springframework.mail.SimpleMailMessage)\" because \"this.javaMailSender\" is null',
-        '2023-03-30 22:40:31');
+VALUES (268, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/tool/gen/5', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 11:14:35');
 INSERT INTO `sys_oper_log`
-VALUES (269, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP', '{\"admin\":false,\"updateBy\":\"admin\",\"userId\":7}', NULL,
-        1,
-        'Cannot invoke \"org.springframework.mail.javamail.JavaMailSender.send(org.springframework.mail.SimpleMailMessage)\" because \"this.javaMailSender\" is null',
-        '2023-03-30 22:42:01');
+VALUES (269, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
+        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"device_manage\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
+        NULL, '2023-04-24 11:17:01');
 INSERT INTO `sys_oper_log`
-VALUES (270, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP', '{\"admin\":false,\"updateBy\":\"admin\",\"userId\":7}', NULL,
-        1,
-        'Cannot invoke \"org.springframework.mail.javamail.JavaMailSender.send(org.springframework.mail.SimpleMailMessage)\" because \"this.javaMailSender\" is null',
-        '2023-03-30 22:43:15');
+VALUES (270, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"device_manage\"}', NULL, 0, NULL,
+        '2023-04-24 11:17:33');
 INSERT INTO `sys_oper_log`
-VALUES (271, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP', '{\"admin\":false,\"updateBy\":\"admin\",\"userId\":7}', NULL,
-        1,
-        'Cannot invoke \"org.springframework.mail.javamail.JavaMailSender.send(org.springframework.mail.SimpleMailMessage)\" because \"this.javaMailSender\" is null',
-        '2023-03-30 22:45:28');
+VALUES (271, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"device_manage\"}', NULL, 0, NULL,
+        '2023-04-24 11:17:44');
 INSERT INTO `sys_oper_log`
-VALUES (272, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP', '{\"admin\":false,\"updateBy\":\"admin\",\"userId\":7}', NULL,
-        1,
-        'Cannot invoke \"org.springframework.mail.javamail.JavaMailSender.send(org.springframework.mail.SimpleMailMessage)\" because \"this.javaMailSender\" is null',
-        '2023-03-30 22:49:21');
+VALUES (272, '设备设施管理', 1, 'com.ruoyi.web.controller.community.DeviceManageController.add()', 'POST', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"createTime\":\"2023-04-24 13:17:00.254\",\"delFlag\":\"0\",\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"小区\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"小区\",\"deviceState\":\"开启\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"小区\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\"}',
+        NULL, 1,
+        '\r\n### Error updating database.  Cause: java.sql.SQLException: Field \'device_no\' doesn\'t have a default value\r\n### The error may exist in file [D:\\home\\community\\ruoyi-community\\target\\classes\\mapper\\community\\DeviceManageMapper.xml]\r\n### The error may involve com.ruoyi.community.mapper.DeviceManageMapper.insertDeviceManage-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into device_manage          ( device_name,                                       device_state,             device_location,             device_user,             device_buy_time,             device_warranty_period,             device_maintain_records,             device_use_desc,             del_flag,                          create_time )           values ( ?,                                       ?,             ?,             ?,             ?,             ?,             ?,             ?,             ?,                          ? )\r\n### Cause: java.sql.SQLException: Field \'device_no\' doesn\'t have a default value\n; Field \'device_no\' doesn\'t have a default value; nested exception is java.sql.SQLException: Field \'device_no\' doesn\'t have a default value',
+        '2023-04-24 13:17:00');
 INSERT INTO `sys_oper_log`
-VALUES (273, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"updateBy\":\"admin\",\"updateTime\":\"2023-03-30 23:08:47.384\",\"userId\":7}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-03-30 23:08:47');
+VALUES (273, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"小区\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"摄像头\",\"deviceNo\":\"001\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"管理员\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 13:55:04.54\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 13:55:04');
 INSERT INTO `sys_oper_log`
-VALUES (274, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP', '{\"admin\":false,\"updateBy\":\"admin\",\"userId\":7}', NULL,
-        1, 'Cannot invoke \"String.length()\" because \"s\" is null', '2023-03-30 23:15:45');
+VALUES (274, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"小区\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"摄像头\",\"deviceNo\":\"001\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"管理员\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 13:57:16.25\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 13:57:16');
 INSERT INTO `sys_oper_log`
-VALUES (275, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"updateBy\":\"admin\",\"updateTime\":\"2023-03-30 23:16:40.097\",\"userId\":7}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-03-30 23:16:40');
+VALUES (275, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"小区\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"摄像头\",\"deviceNo\":\"001\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"管理员\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 13:57:35.796\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 13:57:35');
 INSERT INTO `sys_oper_log`
-VALUES (276, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"updateBy\":\"admin\",\"updateTime\":\"2023-03-30 23:25:51.762\",\"userId\":7}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-03-30 23:25:52');
+VALUES (276, '用户管理', 1, 'com.ruoyi.web.controller.system.SysUserController.add()', 'POST', 1, 'admin', NULL,
+        '/system/user', '127.0.0.1', '内网IP',
+        '{\"admin\":false,\"deptId\":100,\"nickName\":\"11\",\"postIds\":[],\"roleIds\":[],\"sex\":\"0\",\"status\":\"0\",\"userName\":\"admin\"}',
+        '{\"msg\":\"新增用户\'admin\'失败，登录账号已存在\",\"code\":500}', 0, NULL, '2023-04-24 14:02:41');
 INSERT INTO `sys_oper_log`
-VALUES (277, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"updateBy\":\"admin\",\"updateTime\":\"2023-03-30 23:35:30.647\",\"userId\":7}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-03-30 23:35:31');
+VALUES (277, '用户管理', 1, 'com.ruoyi.web.controller.system.SysUserController.add()', 'POST', 1, 'admin', NULL,
+        '/system/user', '127.0.0.1', '内网IP',
+        '{\"admin\":false,\"createBy\":\"admin\",\"deptId\":100,\"nickName\":\"11\",\"postIds\":[],\"roleIds\":[],\"sex\":\"0\",\"status\":\"0\",\"userId\":8,\"userName\":\"11\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 14:02:56');
 INSERT INTO `sys_oper_log`
-VALUES (278, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"unitbuilding\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-03-31 22:12:58');
+VALUES (278, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.edit()', 'PUT', 1, 'admin', NULL,
+        '/system/user', '127.0.0.1', '内网IP',
+        '{\"admin\":false,\"avatar\":\"\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 14:02:56\",\"delFlag\":\"0\",\"dept\":{\"ancestors\":\"0\",\"children\":[],\"deptId\":100,\"deptName\":\"智慧社区\",\"leader\":\"若依\",\"orderNum\":0,\"parentId\":0,\"status\":\"0\"},\"deptId\":100,\"email\":\"\",\"loginIp\":\"\",\"nickName\":\"11\",\"phonenumber\":\"\",\"postIds\":[],\"roleIds\":[],\"roles\":[],\"sex\":\"0\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 14:03:10.5\",\"userId\":8,\"userName\":\"11\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 14:03:10');
 INSERT INTO `sys_oper_log`
-VALUES (279, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"updateBy\":\"admin\",\"updateTime\":\"2023-04-01 22:59:37.427\",\"userId\":7}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-01 22:59:37');
+VALUES (279, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"11\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 14:05:01.201\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 14:05:01');
 INSERT INTO `sys_oper_log`
-VALUES (280, '用户管理', 4, 'com.ruoyi.web.controller.system.SysUserController.insertAuthRole()', 'PUT', 1, 'admin',
-        NULL, '/system/user/authRole', '127.0.0.1', '内网IP', '2 [3]', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-02 15:55:56');
+VALUES (280, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"11\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 14:05:28.519\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 14:05:28');
 INSERT INTO `sys_oper_log`
-VALUES (281, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'admin', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"updateBy\":\"admin\",\"updateTime\":\"2023-04-02 15:56:10.096\",\"userId\":2}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-02 15:56:10');
+VALUES (281, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"11\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 14:07:01.561\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 14:07:14');
 INSERT INTO `sys_oper_log`
-VALUES (282, '用户管理', 4, 'com.ruoyi.web.controller.system.SysUserController.insertAuthRole()', 'PUT', 1, 'admin',
-        NULL, '/system/user/authRole', '127.0.0.1', '内网IP', '7 [2]', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-02 15:57:14');
+VALUES (282, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"11\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 14:08:16.93\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 14:08:27');
 INSERT INTO `sys_oper_log`
-VALUES (283, '角色管理', 4, 'com.ruoyi.web.controller.system.SysRoleController.selectAuthUserAll()', 'PUT', 1, 'admin',
-        NULL, '/system/role/authUser/selectAll', '127.0.0.1', '内网IP', '4 [7]', '{\"msg\":\"操作成功\",\"code\":200}',
-        0, NULL, '2023-04-02 15:58:22');
+VALUES (283, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.synchDb()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/synchDb/device_manage', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 14:17:32');
 INSERT INTO `sys_oper_log`
-VALUES (284, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.resetPwd()', 'PUT', 1, 'ry', NULL,
-        '/system/user/resetPwd', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"updateBy\":\"ry\",\"updateTime\":\"2023-04-02 15:59:15.858\",\"userId\":3}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-02 15:59:16');
+VALUES (284, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"device_manage\"}', NULL, 0, NULL,
+        '2023-04-24 14:17:50');
 INSERT INTO `sys_oper_log`
-VALUES (285, '角色管理', 4, 'com.ruoyi.web.controller.system.SysRoleController.cancelAuthUser()', 'PUT', 1, 'admin',
-        NULL, '/system/role/authUser/cancel', '127.0.0.1', '内网IP', '{\"roleId\":2,\"userId\":7}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-02 16:12:57');
+VALUES (285, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"11\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 14:26:05.719\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 14:26:05');
 INSERT INTO `sys_oper_log`
-VALUES (286, '菜单管理', 1, 'com.ruoyi.web.controller.system.SysMenuController.add()', 'POST', 1, 'admin', NULL,
-        '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"createBy\":\"admin\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuName\":\"分配用户\",\"menuType\":\"F\",\"orderNum\":10,\"parentId\":100,\"perms\":\"system:role:edit\",\"status\":\"0\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-02 16:15:33');
+VALUES (286, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"11\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateTime\":\"2023-04-24 14:26:57.296\"}',
+        '{\"msg\":\"操作失败\",\"code\":500}', 0, NULL, '2023-04-24 14:26:57');
 INSERT INTO `sys_oper_log`
-VALUES (287, '角色管理', 2, 'com.ruoyi.web.controller.system.SysRoleController.edit()', 'PUT', 1, 'admin', NULL,
-        '/system/role', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"createTime\":\"2023-03-24 14:49:10\",\"dataScope\":\"4\",\"delFlag\":\"0\",\"deptCheckStrictly\":true,\"flag\":false,\"menuCheckStrictly\":true,\"menuIds\":[1,100,108,500,501,2,2027,2011,1000,1001,1002,1003,1004,1005,1006,103,1016,1017,1018,1019,1039,1041,1042,1044,1045,109,1046,1047,1048,112,113,107,1035,1036,1037,1038,2028,2031,2032,2033,2029,2034,2035,2030,2018],\"remark\":\"社区管理员\",\"roleId\":3,\"roleKey\":\"manager\",\"roleName\":\"社区管理员\",\"roleSort\":5,\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-02 16:16:55.653\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-02 16:16:55');
+VALUES (287, '设备设施管理', 1, 'com.ruoyi.web.controller.community.DeviceManageController.add()', 'POST', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"createTime\":\"2023-04-24 14:36:24.545\",\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"1\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\"}',
+        NULL, 1,
+        '\r\n### Error updating database.  Cause: java.sql.SQLException: Field \'device_type\' doesn\'t have a default value\r\n### The error may exist in file [D:\\home\\community\\ruoyi-community\\target\\classes\\mapper\\community\\DeviceManageMapper.xml]\r\n### The error may involve com.ruoyi.community.mapper.DeviceManageMapper.insertDeviceManage-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into device_manage          ( device_name,             device_no,                          device_state,             device_location,             device_user,             device_buy_time,             device_warranty_period,             device_maintain_records,             device_use_desc,                                       create_time )           values ( ?,             ?,                          ?,             ?,             ?,             ?,             ?,             ?,             ?,                                       ? )\r\n### Cause: java.sql.SQLException: Field \'device_type\' doesn\'t have a default value\n; Field \'device_type\' doesn\'t have a default value; nested exception is java.sql.SQLException: Field \'device_type\' doesn\'t have a default value',
+        '2023-04-24 14:36:24');
 INSERT INTO `sys_oper_log`
-VALUES (288, '用户管理', 4, 'com.ruoyi.web.controller.system.SysUserController.insertAuthRole()', 'PUT', 1, 'ry', NULL,
-        '/system/user/authRole', '127.0.0.1', '内网IP', '2 [3]', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-02 16:17:05');
+VALUES (288, '设备设施管理', 1, 'com.ruoyi.web.controller.community.DeviceManageController.add()', 'POST', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"createTime\":\"2023-04-24 14:37:13.466\",\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceId\":1,\"deviceLocation\":\"11\",\"deviceMaintainRecords\":\"11\",\"deviceName\":\"11\",\"deviceNo\":\"1\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"11\",\"deviceUser\":\"11\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 14:37:13');
 INSERT INTO `sys_oper_log`
-VALUES (289, '用户管理', 4, 'com.ruoyi.web.controller.system.SysUserController.insertAuthRole()', 'PUT', 1, 'ry', NULL,
-        '/system/user/authRole', '127.0.0.1', '内网IP', '3 [4,3]', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-02 16:19:55');
+VALUES (289, '设备设施管理', 2, 'com.ruoyi.web.controller.community.DeviceManageController.edit()', 'PUT', 1, 'admin',
+        NULL, '/community/manage', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"\",\"createTime\":\"2023-04-24 14:37:13\",\"delFlag\":\"0\",\"deviceBuyTime\":\"2023-04-24 00:00:00\",\"deviceId\":1,\"deviceLocation\":\"111\",\"deviceMaintainRecords\":\"111\",\"deviceName\":\"111\",\"deviceNo\":\"11\",\"deviceState\":\"正常\",\"deviceUseDesc\":\"111\",\"deviceUser\":\"111\",\"deviceWarrantyPeriod\":\"2023-04-25 00:00:00\",\"updateBy\":\"\",\"updateTime\":\"2023-04-24 14:38:06.654\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 14:38:06');
 INSERT INTO `sys_oper_log`
-VALUES (290, '用户管理', 4, 'com.ruoyi.web.controller.system.SysUserController.insertAuthRole()', 'PUT', 1, 'admin',
-        NULL, '/system/user/authRole', '127.0.0.1', '内网IP', '3 [4]', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-02 16:20:41');
+VALUES (290, '字典类型', 1, 'com.ruoyi.web.controller.system.SysDictTypeController.add()', 'POST', 1, 'admin', NULL,
+        '/system/dict/type', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"admin\",\"dictName\":\"设备设施类型\",\"dictType\":\"device_type\",\"remark\":\"设备设施类型\",\"status\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 15:22:18');
 INSERT INTO `sys_oper_log`
-VALUES (291, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/1,2,4,5', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 19:44:40');
+VALUES (291, '字典数据', 1, 'com.ruoyi.web.controller.system.SysDictDataController.add()', 'POST', 1, 'admin', NULL,
+        '/system/dict/data', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"admin\",\"default\":false,\"dictLabel\":\"风扇\",\"dictSort\":0,\"dictType\":\"device_type\",\"dictValue\":\"2\",\"listClass\":\"default\",\"status\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 15:43:17');
 INSERT INTO `sys_oper_log`
-VALUES (292, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"unitbuilding\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-05 19:44:57');
+VALUES (292, '字典数据', 2, 'com.ruoyi.web.controller.system.SysDictDataController.edit()', 'PUT', 1, 'admin', NULL,
+        '/system/dict/data', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"admin\",\"default\":false,\"dictCode\":54,\"dictLabel\":\"温湿度传感器\",\"dictSort\":0,\"dictType\":\"device_type\",\"dictValue\":\"1\",\"isDefault\":\"N\",\"remark\":\"温湿度传感器\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 15:43:29.168\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 15:43:29');
 INSERT INTO `sys_oper_log`
-VALUES (293, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/6', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 19:54:00');
+VALUES (293, '字典数据', 2, 'com.ruoyi.web.controller.system.SysDictDataController.edit()', 'PUT', 1, 'admin', NULL,
+        '/system/dict/data', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"admin\",\"default\":false,\"dictCode\":54,\"dictLabel\":\"温湿度传感器\",\"dictSort\":0,\"dictType\":\"device_type\",\"dictValue\":\"1\",\"isDefault\":\"N\",\"listClass\":\"default\",\"remark\":\"温湿度传感器\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 15:44:16.662\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 15:44:16');
 INSERT INTO `sys_oper_log`
-VALUES (294, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"unitbuilding\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-05 19:54:15');
+VALUES (294, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/tool/gen/1,2,4,6', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:10:12');
 INSERT INTO `sys_oper_log`
-VALUES (295, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/7', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 19:54:38');
+VALUES (295, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
+        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"parking_spaces\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
+        NULL, '2023-04-24 23:10:33');
 INSERT INTO `sys_oper_log`
-VALUES (296, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"unitbuilding\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-05 19:57:03');
-INSERT INTO `sys_oper_log`
-VALUES (297, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
+VALUES (296, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
         '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"unitbuilding\",\"className\":\"Unitbuilding\",\"columns\":[{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":94,\"columnName\":\"user_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 19:57:03\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"userId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":95,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 19:57:03\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":96,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 19:57:03\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"unitNumber\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"Area\",\"columnComment\":\"面积\",\"columnId\":97,\"columnName\":\"area\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 19:57:03\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"ar',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-05 19:59:12');
+        '{\"businessName\":\"spaces\",\"className\":\"ParkingSpaces\",\"columns\":[{\"capJavaField\":\"ParkId\",\"columnComment\":\"主键\",\"columnId\":88,\"columnName\":\"park_id\",\"columnType\":\"int(10) unsigned\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:10:32\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"parkId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":7,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceId\",\"columnComment\":\"车位ID\",\"columnId\":89,\"columnName\":\"parking_space_id\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:10:32\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"parkingSpaceId\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":7,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":90,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:10:32\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":7,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceNumber\",\"columnComment\":\"车位号\",\"columnId\":91,\"columnName\":\"parking_space_number\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:10:32\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRe',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:11:26');
 INSERT INTO `sys_oper_log`
-VALUES (298, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/8', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 20:05:10');
+VALUES (297, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"parking_spaces\"}', NULL, 0, NULL,
+        '2023-04-24 23:11:29');
 INSERT INTO `sys_oper_log`
-VALUES (299, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"unitbuilding\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-05 20:05:19');
+VALUES (298, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
+        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"residents\"', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:12:52');
+INSERT INTO `sys_oper_log`
+VALUES (299, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
+        '/tool/gen', '127.0.0.1', '内网IP',
+        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"ResidentsId\",\"columnComment\":\"住户id\",\"columnId\":99,\"columnName\":\"residents_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"residentsId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":100,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":101,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":102,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaF',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:13:20');
 INSERT INTO `sys_oper_log`
 VALUES (300, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
         '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"unitbuilding\",\"className\":\"Unitbuilding\",\"columns\":[{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":105,\"columnName\":\"user_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:05:19\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"userId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":106,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:05:19\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":107,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:05:19\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"unitNumber\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"Area\",\"columnComment\":\"面积\",\"columnId\":108,\"columnName\":\"area\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:05:19\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\"',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-05 20:06:24');
+        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"ResidentsId\",\"columnComment\":\"住户id\",\"columnId\":99,\"columnName\":\"residents_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"residentsId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"updateTime\":\"2023-04-24 23:13:20\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":100,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"updateTime\":\"2023-04-24 23:13:20\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":101,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":8,\"updateBy\":\"\",\"updateTime\":\"2023-04-24 23:13:20\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":102,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-24 23:12:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"i',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:13:32');
 INSERT INTO `sys_oper_log`
 VALUES (301, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"unitbuilding\"}', NULL, 0, NULL,
-        '2023-04-05 20:06:44');
-INSERT INTO `sys_oper_log`
-VALUES (302, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/9', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 20:15:38');
-INSERT INTO `sys_oper_log`
-VALUES (303, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"residents\"', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 20:15:52');
-INSERT INTO `sys_oper_log`
-VALUES (304, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":116,\"columnName\":\"user_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:15:52\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"userId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":117,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:15:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":118,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:15:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"unitNumber\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"Area\",\"columnComment\":\"面积\",\"columnId\":119,\"columnName\":\"area\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 20:15:52\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"a',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-05 20:16:14');
-INSERT INTO `sys_oper_log`
-VALUES (305, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
         '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"residents\"}', NULL, 0, NULL,
-        '2023-04-05 20:16:17');
+        '2023-04-24 23:13:36');
 INSERT INTO `sys_oper_log`
-VALUES (306, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/10', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 21:12:36');
+VALUES (302, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2054', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:18');
 INSERT INTO `sys_oper_log`
-VALUES (307, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"residents\"', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-05 21:12:52');
+VALUES (303, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2055', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:21');
 INSERT INTO `sys_oper_log`
-VALUES (308, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":127,\"columnName\":\"user_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"userId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":11,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":128,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":11,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":129,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"unitNumber\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":11,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"Area\",\"columnComment\":\"面积\",\"columnId\":130,\"columnName\":\"area\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"a',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-05 21:13:19');
+VALUES (304, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2056', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:24');
 INSERT INTO `sys_oper_log`
-VALUES (309, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":127,\"columnName\":\"user_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"userId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":11,\"updateBy\":\"\",\"updateTime\":\"2023-04-05 21:13:19\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":128,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":11,\"updateBy\":\"\",\"updateTime\":\"2023-04-05 21:13:19\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":129,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"unitNumber\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":11,\"updateBy\":\"\",\"updateTime\":\"2023-04-05 21:13:19\",\"usableColumn\":false},{\"capJavaField\":\"Area\",\"columnComment\":\"面积\",\"columnId\":130,\"columnName\":\"area\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-05 21:12:51\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-05 21:13:39');
+VALUES (305, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2057', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:26');
 INSERT INTO `sys_oper_log`
-VALUES (310, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"residents\"}', NULL, 0, NULL,
-        '2023-04-05 21:13:44');
+VALUES (306, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2058', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:29');
 INSERT INTO `sys_oper_log`
-VALUES (311, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
+VALUES (307, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2053', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:33');
+INSERT INTO `sys_oper_log`
+VALUES (308, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2059', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"存在子菜单,不允许删除\",\"code\":601}', 0, NULL,
+        '2023-04-24 23:15:38');
+INSERT INTO `sys_oper_log`
+VALUES (309, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2060', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:44');
+INSERT INTO `sys_oper_log`
+VALUES (310, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2061', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:47');
+INSERT INTO `sys_oper_log`
+VALUES (311, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2062', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:50');
+INSERT INTO `sys_oper_log`
+VALUES (312, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2063', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:53');
+INSERT INTO `sys_oper_log`
+VALUES (313, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2064', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:15:56');
+INSERT INTO `sys_oper_log`
+VALUES (314, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
+        '/system/menu/2059', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-24 23:16:01');
+INSERT INTO `sys_oper_log`
+VALUES (315, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
         '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"tool/swagger/index\",\"createTime\":\"2022-08-09 10:14:25\",\"icon\":\"swagger\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":117,\"menuName\":\"系统接口\",\"menuType\":\"F\",\"orderNum\":3,\"parentId\":3,\"path\":\"swagger\",\"perms\":\"tool:swagger:list\",\"query\":\"\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-08 10:11:08.086\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 10:11:08');
-INSERT INTO `sys_oper_log`
-VALUES (312, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/11', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:22:58');
-INSERT INTO `sys_oper_log`
-VALUES (313, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"residents\"', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:23:20');
-INSERT INTO `sys_oper_log`
-VALUES (314, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":138,\"columnName\":\"user_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:23:20\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"userId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":12,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":139,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:23:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":12,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":140,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:23:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"unitNumber\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":12,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"Area\",\"columnComment\":\"面积\",\"columnId\":141,\"columnName\":\"area\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:23:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"a',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 10:24:18');
-INSERT INTO `sys_oper_log`
-VALUES (315, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"residents\"}', NULL, 0, NULL,
-        '2023-04-08 10:24:25');
+        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-24 23:14:19\",\"icon\":\"people\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2065,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":3,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 23:16:55.073\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:16:55');
 INSERT INTO `sys_oper_log`
 VALUES (316, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
         '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-05 20:31:10\",\"icon\":\"#\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2042,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":3,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"1\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-08 10:34:00.15\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 10:34:00');
+        '{\"children\":[],\"component\":\"community/manage/index\",\"createTime\":\"2023-04-24 13:09:16\",\"icon\":\"tool\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2041,\"menuName\":\"设备设施管理\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":3,\"path\":\"manage\",\"perms\":\"community:manage:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 23:17:20.074\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:17:20');
 INSERT INTO `sys_oper_log`
 VALUES (317, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
         '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-08 10:29:54\",\"icon\":\"peoples\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2048,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":3,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"0\",\"visible\":\"0\"}',
-        '{\"msg\":\"修改菜单\'住户信息\'失败，菜单名称已存在\",\"code\":500}', 0, NULL, '2023-04-08 10:35:38');
+        '{\"children\":[],\"component\":\"community/spaces/index\",\"createTime\":\"2023-04-24 23:12:12\",\"icon\":\"shopping\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2047,\"menuName\":\"车位信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":3,\"path\":\"spaces\",\"perms\":\"community:spaces:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 23:18:06.051\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:18:06');
 INSERT INTO `sys_oper_log`
-VALUES (318, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2042', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"存在子菜单,不允许删除\",\"code\":601}', 0, NULL,
-        '2023-04-08 10:35:48');
-INSERT INTO `sys_oper_log`
-VALUES (319, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2043', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:35:58');
-INSERT INTO `sys_oper_log`
-VALUES (320, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2044', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:36:02');
-INSERT INTO `sys_oper_log`
-VALUES (321, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2045', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:36:05');
-INSERT INTO `sys_oper_log`
-VALUES (322, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2046', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:36:08');
-INSERT INTO `sys_oper_log`
-VALUES (323, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2047', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:36:11');
-INSERT INTO `sys_oper_log`
-VALUES (324, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2042', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:36:15');
-INSERT INTO `sys_oper_log`
-VALUES (325, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
+VALUES (318, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
         '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-08 10:29:54\",\"icon\":\"user\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2048,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":3,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-08 10:40:37.068\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 10:40:37');
+        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-24 23:14:19\",\"icon\":\"people\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2065,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":1,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 23:18:22.528\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:18:22');
 INSERT INTO `sys_oper_log`
-VALUES (326, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
+VALUES (319, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
         '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-08 10:29:54\",\"icon\":\"user\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2048,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":1,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-08 10:47:12.108\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 10:47:12');
+        '{\"children\":[],\"component\":\"community/manage/index\",\"createTime\":\"2023-04-24 13:09:16\",\"icon\":\"tool\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2041,\"menuName\":\"设备设施管理\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":1,\"path\":\"manage\",\"perms\":\"community:manage:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 23:18:37.919\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:18:38');
 INSERT INTO `sys_oper_log`
-VALUES (327, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
+VALUES (320, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
         '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-08 10:29:54\",\"icon\":\"people\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2048,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":1,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-08 10:48:15.763\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 10:48:15');
+        '{\"children\":[],\"component\":\"community/spaces/index\",\"createTime\":\"2023-04-24 23:12:12\",\"icon\":\"shopping\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2047,\"menuName\":\"车位信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":1,\"path\":\"spaces\",\"perms\":\"community:spaces:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 23:18:50.547\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:18:50');
+INSERT INTO `sys_oper_log`
+VALUES (321, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
+        '/system/menu', '127.0.0.1', '内网IP',
+        '{\"children\":[],\"component\":\"community/manage/index\",\"createTime\":\"2023-04-24 13:09:16\",\"icon\":\"tool\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2041,\"menuName\":\"设备管理\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":1,\"path\":\"manage\",\"perms\":\"community:manage:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-24 23:19:52.304\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-24 23:19:52');
+INSERT INTO `sys_oper_log`
+VALUES (322, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
+        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"device_manage\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
+        NULL, '2023-04-25 18:29:06');
+INSERT INTO `sys_oper_log`
+VALUES (323, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
+        '/tool/gen', '127.0.0.1', '内网IP',
+        '{\"businessName\":\"manage\",\"className\":\"DeviceManage\",\"columns\":[{\"capJavaField\":\"DeviceId\",\"columnId\":113,\"columnName\":\"device_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceId\",\"javaType\":\"Long\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"DeviceName\",\"columnComment\":\"设备设施名称\",\"columnId\":114,\"columnName\":\"device_name\",\"columnType\":\"varchar(50)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceName\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"LIKE\",\"required\":false,\"sort\":2,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"DeviceNo\",\"columnComment\":\"设备设施编号\",\"columnId\":115,\"columnName\":\"device_no\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceNo\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":false,\"sort\":3,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"DeviceType\",\"columnComment\":\"设备设施类型\",\"columnId\":116,\"columnName\":\"device_type\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"device_type\",\"edit\":true,\"htmlType\":\"select\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaFiel',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 18:35:36');
+INSERT INTO `sys_oper_log`
+VALUES (324, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
+        '/tool/gen', '127.0.0.1', '内网IP',
+        '{\"businessName\":\"manage\",\"className\":\"DeviceManage\",\"columns\":[{\"capJavaField\":\"DeviceId\",\"columnId\":113,\"columnName\":\"device_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceId\",\"javaType\":\"Long\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 18:35:35\",\"usableColumn\":false},{\"capJavaField\":\"DeviceName\",\"columnComment\":\"设备设施名称\",\"columnId\":114,\"columnName\":\"device_name\",\"columnType\":\"varchar(50)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceName\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"LIKE\",\"required\":false,\"sort\":2,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 18:35:35\",\"usableColumn\":false},{\"capJavaField\":\"DeviceNo\",\"columnComment\":\"设备设施编号\",\"columnId\":115,\"columnName\":\"device_no\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceNo\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":false,\"sort\":3,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 18:35:35\",\"usableColumn\":false},{\"capJavaField\":\"DeviceType\",\"columnComment\":\"设备设施类型\",\"columnId\":116,\"columnName\":\"device_type\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"device_type\",\"edit\":true,\"htmlType\":\"select\",\"increment\":false,\"insert\":true,\"isEd',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 18:36:42');
+INSERT INTO `sys_oper_log`
+VALUES (325, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.synchDb()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/synchDb/device_manage', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-25 18:36:47');
+INSERT INTO `sys_oper_log`
+VALUES (326, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
+        '/tool/gen', '127.0.0.1', '内网IP',
+        '{\"businessName\":\"manage\",\"className\":\"DeviceManage\",\"columns\":[{\"capJavaField\":\"DeviceId\",\"columnComment\":\"\",\"columnId\":113,\"columnName\":\"device_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceId\",\"javaType\":\"Long\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 18:36:47\",\"usableColumn\":false},{\"capJavaField\":\"DeviceName\",\"columnComment\":\"设备设施名称\",\"columnId\":114,\"columnName\":\"device_name\",\"columnType\":\"varchar(50)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceName\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"LIKE\",\"required\":false,\"sort\":2,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 18:36:47\",\"usableColumn\":false},{\"capJavaField\":\"DeviceNo\",\"columnComment\":\"设备设施编号\",\"columnId\":115,\"columnName\":\"device_no\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceNo\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":false,\"sort\":3,\"superColumn\":false,\"tableId\":9,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 18:36:47\",\"usableColumn\":false},{\"capJavaField\":\"DeviceType\",\"columnComment\":\"设备设施类型\",\"columnId\":116,\"columnName\":\"device_type\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 18:29:06\",\"dictType\":\"device_type\",\"edit\":true,\"htmlType\":\"select\",\"increment\":false,',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 18:38:58');
+INSERT INTO `sys_oper_log`
+VALUES (327, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"device_manage\"}', NULL, 0, NULL,
+        '2023-04-25 18:39:17');
 INSERT INTO `sys_oper_log`
 VALUES (328, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/12', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:56:14');
+        '/tool/gen/7,8,9', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
+        '2023-04-25 19:50:40');
 INSERT INTO `sys_oper_log`
 VALUES (329, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"residents\"', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 10:56:25');
+        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"device_manage\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
+        NULL, '2023-04-25 19:50:59');
 INSERT INTO `sys_oper_log`
 VALUES (330, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
         '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":149,\"columnName\":\"user_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:56:25\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"userId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":13,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":150,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:56:25\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":13,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":151,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:56:25\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"unitNumber\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":13,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"Area\",\"columnComment\":\"面积\",\"columnId\":152,\"columnName\":\"area\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 10:56:25\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"a',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 11:40:30');
+        '{\"businessName\":\"manage\",\"className\":\"DeviceManage\",\"columns\":[{\"capJavaField\":\"DeviceId\",\"columnId\":129,\"columnName\":\"device_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceId\",\"javaType\":\"Long\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"DeviceName\",\"columnComment\":\"设备设施名称\",\"columnId\":130,\"columnName\":\"device_name\",\"columnType\":\"varchar(50)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceName\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"LIKE\",\"required\":false,\"sort\":2,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"DeviceNo\",\"columnComment\":\"设备设施编号\",\"columnId\":131,\"columnName\":\"device_no\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceNo\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":false,\"sort\":3,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"DeviceType\",\"columnComment\":\"设备设施类型\",\"columnId\":132,\"columnName\":\"device_type\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"device_type\",\"edit\":true,\"htmlType\":\"select\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaF',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 19:53:47');
 INSERT INTO `sys_oper_log`
-VALUES (331, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"residents\"}', NULL, 0, NULL,
-        '2023-04-08 11:40:37');
-INSERT INTO `sys_oper_log`
-VALUES (332, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2054', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"存在子菜单,不允许删除\",\"code\":601}', 0, NULL,
-        '2023-04-08 12:12:30');
-INSERT INTO `sys_oper_log`
-VALUES (333, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2059', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 12:12:36');
-INSERT INTO `sys_oper_log`
-VALUES (334, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2058', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 12:12:40');
-INSERT INTO `sys_oper_log`
-VALUES (335, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2057', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 12:12:43');
-INSERT INTO `sys_oper_log`
-VALUES (336, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2056', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 12:12:47');
-INSERT INTO `sys_oper_log`
-VALUES (337, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2055', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 12:12:52');
-INSERT INTO `sys_oper_log`
-VALUES (338, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2054', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 12:12:55');
-INSERT INTO `sys_oper_log`
-VALUES (339, '住户信息', 2, 'com.ruoyi.web.controller.community.ResidentsController.edit()', 'PUT', 1, 'admin', NULL,
-        '/community/residents', '127.0.0.1', '内网IP',
-        '{\"address\":\"北京市朝阳区建国路100号，1单元2001室\",\"area\":\"123\",\"buildingNumber\":\"131\",\"createBy\":\"\",\"delFlag\":\"123\",\"remarks\":\"张先生是一个安静、友善的住户，定期按时缴纳房租和水电费。他的家庭非常整洁，对房屋保持得非常好。\",\"unitNumber\":123,\"updateTime\":\"2023-04-08 12:21:18.663\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 12:21:18');
-INSERT INTO `sys_oper_log`
-VALUES (340, '个人信息', 2, 'com.ruoyi.web.controller.system.SysProfileController.updateProfile()', 'PUT', 1, 'admin',
-        NULL, '/system/user/profile', '127.0.0.1', '内网IP',
-        '{\"admin\":true,\"createBy\":\"admin\",\"createTime\":\"2022-07-30 12:09:02\",\"delFlag\":\"0\",\"dept\":{\"ancestors\":\"0,100,101\",\"children\":[],\"deptId\":103,\"deptName\":\"金色家园1栋\",\"leader\":\"若依\",\"orderNum\":1,\"parentId\":101,\"status\":\"0\"},\"email\":\"29152440390ai@gmail.com\",\"loginDate\":\"2023-04-08 11:38:45\",\"loginIp\":\"127.0.0.1\",\"nickName\":\"若依\",\"phonenumber\":\"15888888888\",\"remark\":\"管理员\",\"roles\":[{\"admin\":true,\"dataScope\":\"1\",\"deptCheckStrictly\":false,\"flag\":false,\"menuCheckStrictly\":false,\"roleId\":1,\"roleKey\":\"admin\",\"roleName\":\"超级管理员\",\"roleSort\":1,\"status\":\"0\"}],\"sex\":\"0\",\"status\":\"0\",\"updateTime\":\"2023-04-08 12:54:09.267\",\"userId\":1,\"userName\":\"admin\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 12:54:09');
-INSERT INTO `sys_oper_log`
-VALUES (341, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/13', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 13:49:56');
-INSERT INTO `sys_oper_log`
-VALUES (342, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"residents\"', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 13:50:10');
-INSERT INTO `sys_oper_log`
-VALUES (343, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
+VALUES (331, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
         '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"ResidentsId\",\"columnComment\":\"住户id\",\"columnId\":162,\"columnName\":\"residents_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"residentsId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":14,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":163,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":14,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":164,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":14,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":165,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 13:51:10');
+        '{\"businessName\":\"manage\",\"className\":\"DeviceManage\",\"columns\":[{\"capJavaField\":\"DeviceId\",\"columnComment\":\"设备id\",\"columnId\":129,\"columnName\":\"device_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceId\",\"javaType\":\"Long\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 19:53:46\",\"usableColumn\":false},{\"capJavaField\":\"DeviceName\",\"columnComment\":\"设备名称\",\"columnId\":130,\"columnName\":\"device_name\",\"columnType\":\"varchar(50)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceName\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"LIKE\",\"required\":false,\"sort\":2,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 19:53:46\",\"usableColumn\":false},{\"capJavaField\":\"DeviceNo\",\"columnComment\":\"设备设施编号\",\"columnId\":131,\"columnName\":\"device_no\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"0\",\"javaField\":\"deviceNo\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":false,\"sort\":3,\"superColumn\":false,\"tableId\":10,\"updateBy\":\"\",\"updateTime\":\"2023-04-25 19:53:46\",\"usableColumn\":false},{\"capJavaField\":\"DeviceType\",\"columnComment\":\"设备设施类型\",\"columnId\":132,\"columnName\":\"device_type\",\"columnType\":\"varchar(20)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-25 19:50:58\",\"dictType\":\"device_type\",\"edit\":true,\"htmlType\":\"select\",\"increment\":f',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 20:00:17');
 INSERT INTO `sys_oper_log`
-VALUES (344, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"ResidentsId\",\"columnComment\":\"住户id\",\"columnId\":162,\"columnName\":\"residents_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"residentsId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":14,\"updateBy\":\"\",\"updateTime\":\"2023-04-08 13:51:10\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":163,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":14,\"updateBy\":\"\",\"updateTime\":\"2023-04-08 13:51:10\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":164,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":14,\"updateBy\":\"\",\"updateTime\":\"2023-04-08 13:51:10\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":165,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 13:50:10\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":tr',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 13:51:21');
+VALUES (332, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"device_manage\"}', NULL, 0, NULL,
+        '2023-04-25 20:00:20');
 INSERT INTO `sys_oper_log`
-VALUES (345, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"residents\"}', NULL, 0, NULL,
-        '2023-04-08 13:51:25');
+VALUES (333, '字典数据', 2, 'com.ruoyi.web.controller.system.SysDictDataController.edit()', 'PUT', 1, 'admin', NULL,
+        '/system/dict/data', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"admin\",\"default\":false,\"dictCode\":54,\"dictLabel\":\"温度传感器\",\"dictSort\":0,\"dictType\":\"device_type\",\"dictValue\":\"1\",\"isDefault\":\"N\",\"listClass\":\"default\",\"remark\":\"温度传感器\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-25 23:14:01.903\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 23:14:02');
 INSERT INTO `sys_oper_log`
-VALUES (346, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2049', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:40:35');
+VALUES (334, '字典数据', 1, 'com.ruoyi.web.controller.system.SysDictDataController.add()', 'POST', 1, 'admin', NULL,
+        '/system/dict/data', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"admin\",\"default\":false,\"dictLabel\":\"湿度传感器\",\"dictSort\":0,\"dictType\":\"device_type\",\"dictValue\":\"3\",\"listClass\":\"default\",\"remark\":\"湿度传感器\",\"status\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 23:14:56');
 INSERT INTO `sys_oper_log`
-VALUES (347, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2050', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:40:44');
+VALUES (335, '字典数据', 1, 'com.ruoyi.web.controller.system.SysDictDataController.add()', 'POST', 1, 'admin', NULL,
+        '/system/dict/data', '127.0.0.1', '内网IP',
+        '{\"createBy\":\"admin\",\"default\":false,\"dictLabel\":\"光照传感器\",\"dictSort\":0,\"dictType\":\"device_type\",\"dictValue\":\"4\",\"listClass\":\"default\",\"remark\":\"光照传感器\",\"status\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 23:15:27');
 INSERT INTO `sys_oper_log`
-VALUES (348, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2051', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:40:48');
-INSERT INTO `sys_oper_log`
-VALUES (349, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2052', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:40:51');
-INSERT INTO `sys_oper_log`
-VALUES (350, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/100', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"存在子菜单,不允许删除\",\"code\":601}', 0, NULL,
-        '2023-04-08 17:40:53');
-INSERT INTO `sys_oper_log`
-VALUES (351, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2048', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"存在子菜单,不允许删除\",\"code\":601}', 0, NULL,
-        '2023-04-08 17:40:58');
-INSERT INTO `sys_oper_log`
-VALUES (352, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2053', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:03');
-INSERT INTO `sys_oper_log`
-VALUES (353, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2048', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:05');
-INSERT INTO `sys_oper_log`
-VALUES (354, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2061', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:34');
-INSERT INTO `sys_oper_log`
-VALUES (355, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2062', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:37');
-INSERT INTO `sys_oper_log`
-VALUES (356, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2063', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:41');
-INSERT INTO `sys_oper_log`
-VALUES (357, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2064', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:44');
-INSERT INTO `sys_oper_log`
-VALUES (358, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2065', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:48');
-INSERT INTO `sys_oper_log`
-VALUES (359, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2060', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:41:52');
-INSERT INTO `sys_oper_log`
-VALUES (360, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/14', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:42:21');
-INSERT INTO `sys_oper_log`
-VALUES (361, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"residents\"', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-08 17:42:35');
-INSERT INTO `sys_oper_log`
-VALUES (362, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"ResidentsId\",\"columnComment\":\"住户id\",\"columnId\":176,\"columnName\":\"residents_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"residentsId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":15,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":177,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":15,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":178,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":15,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":179,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 17:43:24');
-INSERT INTO `sys_oper_log`
-VALUES (363, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"residents\",\"className\":\"Residents\",\"columns\":[{\"capJavaField\":\"ResidentsId\",\"columnComment\":\"住户id\",\"columnId\":176,\"columnName\":\"residents_id\",\"columnType\":\"int(10)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"residentsId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":15,\"updateBy\":\"\",\"updateTime\":\"2023-04-08 17:43:23\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":177,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":15,\"updateBy\":\"\",\"updateTime\":\"2023-04-08 17:43:23\",\"usableColumn\":false},{\"capJavaField\":\"BuildingNumber\",\"columnComment\":\"楼号\",\"columnId\":178,\"columnName\":\"building_number\",\"columnType\":\"char(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"buildingNumber\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":15,\"updateBy\":\"\",\"updateTime\":\"2023-04-08 17:43:23\",\"usableColumn\":false},{\"capJavaField\":\"UnitNumber\",\"columnComment\":\"单元号\",\"columnId\":179,\"columnName\":\"unit_number\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-08 17:42:35\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":tr',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 17:50:28');
-INSERT INTO `sys_oper_log`
-VALUES (364, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"residents\"}', NULL, 0, NULL,
-        '2023-04-08 17:50:32');
-INSERT INTO `sys_oper_log`
-VALUES (365, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
+VALUES (336, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
         '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"community/residents/index\",\"createTime\":\"2023-04-08 17:52:12\",\"icon\":\"people\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2066,\"menuName\":\"住户信息\",\"menuType\":\"C\",\"orderNum\":1,\"parentId\":1,\"path\":\"residents\",\"perms\":\"community:residents:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-08 17:55:49.097\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-08 17:55:49');
+        '{\"children\":[],\"component\":\"bpm/group/index\",\"createTime\":\"2022-08-18 17:12:49\",\"icon\":\"peoples\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2022,\"menuName\":\"用户分组\",\"menuType\":\"C\",\"orderNum\":3,\"parentId\":2004,\"path\":\"user-group\",\"perms\":\"\",\"status\":\"1\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-25 23:21:03.987\",\"visible\":\"0\"}',
+        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-25 23:21:04');
 INSERT INTO `sys_oper_log`
-VALUES (366, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.edit()', 'PUT', 1, 'admin', NULL,
-        '/system/user', '127.0.0.1', '内网IP',
-        '{\"admin\":false,\"avatar\":\"\",\"createBy\":\"admin\",\"createTime\":\"2022-07-30 12:09:02\",\"delFlag\":\"0\",\"dept\":{\"ancestors\":\"0,100\",\"children\":[],\"deptId\":101,\"deptName\":\"金色家园\",\"leader\":\"若依\",\"orderNum\":1,\"parentId\":100,\"status\":\"0\"},\"deptId\":101,\"email\":\"29152440390ai@gmail.com\",\"loginDate\":\"2023-04-02 16:19:17\",\"loginIp\":\"127.0.0.1\",\"nickName\":\"社区管理员\",\"phonenumber\":\"15666666666\",\"postIds\":[2],\"remark\":\"项目经理用户\",\"roleIds\":[3],\"roles\":[{\"admin\":false,\"dataScope\":\"4\",\"deptCheckStrictly\":false,\"flag\":false,\"menuCheckStrictly\":false,\"roleId\":3,\"roleKey\":\"manager\",\"roleName\":\"社区管理员\",\"roleSort\":5,\"status\":\"0\"}],\"sex\":\"1\",\"status\":\"0\",\"userId\":2,\"userName\":\"ry\"}',
-        '{\"msg\":\"修改用户\'ry\'失败，邮箱账号已存在\",\"code\":500}', 0, NULL, '2023-04-09 22:54:52');
-INSERT INTO `sys_oper_log`
-VALUES (367, '住户信息', 2, 'com.ruoyi.web.controller.community.ResidentsController.edit()', 'PUT', 1, 'admin', NULL,
-        '/community/residents', '127.0.0.1', '内网IP',
-        '{\"address\":\"北京市朝阳区建国路100号，1单元2001室\",\"area\":\"123\",\"buildingNumber\":\"131\",\"createBy\":\"\",\"delFlag\":\"123\",\"remarks\":\"张先生是一个安静、友善的住户，定期按时缴纳房租和水电费。他的家庭非常整洁，对房屋保持得非常好。\",\"residentsId\":1,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"unitNumber\":123,\"updateTime\":\"2023-04-10 22:56:19.122\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-10 22:56:19');
-INSERT INTO `sys_oper_log`
-VALUES (368, '住户信息', 2, 'com.ruoyi.web.controller.community.ResidentsController.edit()', 'PUT', 1, 'admin', NULL,
-        '/community/residents', '127.0.0.1', '内网IP',
-        '{\"address\":\"北京市朝阳区建国路100号，1单元2001室\",\"area\":\"123\",\"buildingNumber\":\"131\",\"createBy\":\"\",\"delFlag\":\"123\",\"remarks\":\"张先生是一个安静、友善的住户，定期按时缴纳房租和水电费。他的家庭非常整洁，对房屋保持得非常好。\",\"residentsId\":1,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"unitNumber\":123,\"updateTime\":\"2023-04-10 23:10:06.934\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-10 23:10:07');
-INSERT INTO `sys_oper_log`
-VALUES (369, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/15', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 17:51:56');
-INSERT INTO `sys_oper_log`
-VALUES (370, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"parking_spaces\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-11 17:52:12');
-INSERT INTO `sys_oper_log`
-VALUES (371, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"spaces\",\"className\":\"ParkingSpaces\",\"columns\":[{\"capJavaField\":\"ParkId\",\"columnComment\":\"主键\",\"columnId\":190,\"columnName\":\"park_id\",\"columnType\":\"int(10) unsigned\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:11\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"parkId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":16,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceId\",\"columnComment\":\"车位ID\",\"columnId\":191,\"columnName\":\"parking_space_id\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:12\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"parkingSpaceId\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":16,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":192,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:12\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":16,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceNumber\",\"columnComment\":\"车位号\",\"columnId\":193,\"columnName\":\"parking_space_number\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:12\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 17:53:23');
-INSERT INTO `sys_oper_log`
-VALUES (372, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"spaces\",\"className\":\"ParkingSpaces\",\"columns\":[{\"capJavaField\":\"ParkId\",\"columnComment\":\"主键\",\"columnId\":190,\"columnName\":\"park_id\",\"columnType\":\"int(10) unsigned\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:11\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"parkId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":16,\"updateBy\":\"\",\"updateTime\":\"2023-04-11 17:53:22\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceId\",\"columnComment\":\"车位ID\",\"columnId\":191,\"columnName\":\"parking_space_id\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:12\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"parkingSpaceId\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":16,\"updateBy\":\"\",\"updateTime\":\"2023-04-11 17:53:22\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":192,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:12\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":16,\"updateBy\":\"\",\"updateTime\":\"2023-04-11 17:53:22\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceNumber\",\"columnComment\":\"车位号\",\"columnId\":193,\"columnName\":\"parking_space_number\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 17:52:12\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"incremen',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 17:53:40');
-INSERT INTO `sys_oper_log`
-VALUES (373, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"parking_spaces\"}', NULL, 0, NULL,
-        '2023-04-11 17:53:42');
-INSERT INTO `sys_oper_log`
-VALUES (374, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2077', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 18:37:28');
-INSERT INTO `sys_oper_log`
-VALUES (375, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2076', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 18:37:32');
-INSERT INTO `sys_oper_log`
-VALUES (376, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2073', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 18:37:36');
-INSERT INTO `sys_oper_log`
-VALUES (377, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2074', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 18:37:40');
-INSERT INTO `sys_oper_log`
-VALUES (378, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2075', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 18:37:43');
-INSERT INTO `sys_oper_log`
-VALUES (379, '菜单管理', 3, 'com.ruoyi.web.controller.system.SysMenuController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/system/menu/2072', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 18:37:47');
-INSERT INTO `sys_oper_log`
-VALUES (380, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
-        '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"community/spaces/index\",\"createTime\":\"2023-04-11 18:18:25\",\"icon\":\"email\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":2078,\"menuName\":\"车位信息\",\"menuType\":\"C\",\"orderNum\":2,\"parentId\":1,\"path\":\"spaces\",\"perms\":\"community:spaces:list\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-11 18:38:57.118\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 18:38:57');
-INSERT INTO `sys_oper_log`
-VALUES (381, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
-        '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"tool/swagger/index\",\"createTime\":\"2022-08-09 10:14:25\",\"icon\":\"swagger\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":117,\"menuName\":\"系统接口\",\"menuType\":\"F\",\"orderNum\":3,\"parentId\":3,\"path\":\"swagger\",\"perms\":\"tool:swagger:list\",\"query\":\"\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-11 18:44:26.775\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 18:44:27');
-INSERT INTO `sys_oper_log`
-VALUES (382, '角色管理', 2, 'com.ruoyi.web.controller.system.SysRoleController.edit()', 'PUT', 1, 'admin', NULL,
-        '/system/role', '127.0.0.1', '内网IP',
-        '{\"admin\":true,\"createTime\":\"2022-07-30 12:09:02\",\"dataScope\":\"1\",\"delFlag\":\"0\",\"deptCheckStrictly\":true,\"flag\":false,\"menuCheckStrictly\":true,\"menuIds\":[3,117],\"remark\":\"超级管理员\",\"roleId\":1,\"roleKey\":\"admin\",\"roleName\":\"超级管理员\",\"roleSort\":1,\"status\":\"0\"}',
-        NULL, 1, '不允许操作超级管理员角色', '2023-04-11 18:45:04');
-INSERT INTO `sys_oper_log`
-VALUES (383, '角色管理', 2, 'com.ruoyi.web.controller.system.SysRoleController.edit()', 'PUT', 1, 'admin', NULL,
-        '/system/role', '127.0.0.1', '内网IP',
-        '{\"admin\":true,\"createTime\":\"2022-07-30 12:09:02\",\"dataScope\":\"1\",\"delFlag\":\"0\",\"deptCheckStrictly\":true,\"flag\":false,\"menuCheckStrictly\":true,\"menuIds\":[1,2066,2067,2068,2069,2070,2071,100,1000,1001,1002,1003,1004,1005,1006,2041,2078,2079,2080,2081,2082,2083,101,1007,1008,1009,1010,1011,103,1016,1017,1018,1019,102,1012,1013,1014,1015,104,1020,1021,1022,1023,1024,105,1025,1026,1027,1028,1029,106,1030,1031,1032,1033,1034,108,500,1039,1040,1041,501,1042,1043,1044,1045,2002,2,109,1046,1047,1048,110,1049,1050,1051,1052,1053,1054,111,112,113,114,3,115,1055,1056,1058,1057,1059,1060,116,117,2037,2038,2039,2040,2000,2001,2036,2003,2004,2005,2006,2007,2008,2009,2010,2022,2023,2024,2025,2026,2027,107,1035,1036,1037,1038,2028,2031,2032,2033,2029,2034,2035,2030,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021],\"remark\":\"超级管理员\",\"roleId\":1,\"roleKey\":\"admin\",\"roleName\":\"超级管理员\",\"roleSort\":1,\"status\":\"0\"}',
-        NULL, 1, '不允许操作超级管理员角色', '2023-04-11 18:45:10');
-INSERT INTO `sys_oper_log`
-VALUES (384, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.edit()', 'PUT', 1, 'admin', NULL,
-        '/system/menu', '127.0.0.1', '内网IP',
-        '{\"children\":[],\"component\":\"tool/swagger/index\",\"createTime\":\"2022-08-09 10:14:25\",\"icon\":\"swagger\",\"isCache\":\"0\",\"isFrame\":\"1\",\"menuId\":117,\"menuName\":\"系统接口\",\"menuType\":\"C\",\"orderNum\":3,\"parentId\":3,\"path\":\"swagger\",\"perms\":\"tool:swagger:list\",\"query\":\"\",\"status\":\"0\",\"updateBy\":\"admin\",\"updateTime\":\"2023-04-11 18:46:05.658\",\"visible\":\"0\"}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 18:46:06');
-INSERT INTO `sys_oper_log`
-VALUES (385, '字典类型', 9, 'com.ruoyi.web.controller.system.SysDictTypeController.refreshCache()', 'DELETE', 1,
-        'admin', NULL, '/system/dict/type/refreshCache', '127.0.0.1', '内网IP', '{}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 19:45:10');
-INSERT INTO `sys_oper_log`
-VALUES (386, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":2,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W88888\",\"status\":1,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"updateTime\":\"2023-04-11 19:52:17.538\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 19:52:17');
-INSERT INTO `sys_oper_log`
-VALUES (387, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/16', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-11 20:00:45');
-INSERT INTO `sys_oper_log`
-VALUES (388, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"parking_spaces\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-11 20:01:17');
-INSERT INTO `sys_oper_log`
-VALUES (389, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"spaces\",\"className\":\"ParkingSpaces\",\"columns\":[{\"capJavaField\":\"ParkId\",\"columnComment\":\"主键\",\"columnId\":200,\"columnName\":\"park_id\",\"columnType\":\"int(10) unsigned\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"parkId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":17,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceId\",\"columnComment\":\"车位ID\",\"columnId\":201,\"columnName\":\"parking_space_id\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"parkingSpaceId\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"LIKE\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":17,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":202,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":17,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceNumber\",\"columnComment\":\"车位号\",\"columnId\":203,\"columnName\":\"parking_space_number\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 20:04:52');
-INSERT INTO `sys_oper_log`
-VALUES (390, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"spaces\",\"className\":\"ParkingSpaces\",\"columns\":[{\"capJavaField\":\"ParkId\",\"columnComment\":\"主键\",\"columnId\":200,\"columnName\":\"park_id\",\"columnType\":\"int(10) unsigned\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"parkId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":17,\"updateBy\":\"\",\"updateTime\":\"2023-04-11 20:04:52\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceId\",\"columnComment\":\"车位ID\",\"columnId\":201,\"columnName\":\"parking_space_id\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"parkingSpaceId\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"LIKE\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":17,\"updateBy\":\"\",\"updateTime\":\"2023-04-11 20:04:52\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":202,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":17,\"updateBy\":\"\",\"updateTime\":\"2023-04-11 20:04:52\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceNumber\",\"columnComment\":\"车位号\",\"columnId\":203,\"columnName\":\"parking_space_number\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-11 20:01:17\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increm',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-11 20:05:08');
-INSERT INTO `sys_oper_log`
-VALUES (391, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"parking_spaces\"}', NULL, 0, NULL,
-        '2023-04-11 20:05:11');
-INSERT INTO `sys_oper_log`
-VALUES (392, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":2,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W88888\",\"remark\":\"hello\",\"rent\":\"N\",\"status\":1,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"updateTime\":\"2023-04-12 19:26:12.386\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 19:26:12');
-INSERT INTO `sys_oper_log`
-VALUES (393, '参数管理', 9, 'com.ruoyi.web.controller.system.SysConfigController.refreshCache()', 'DELETE', 1, 'admin',
-        NULL, '/system/config/refreshCache', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-12 19:51:30');
-INSERT INTO `sys_oper_log`
-VALUES (394, '代码生成', 3, 'com.ruoyi.generator.controller.GenController.remove()', 'DELETE', 1, 'admin', NULL,
-        '/tool/gen/17', '127.0.0.1', '内网IP', '{}', '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL,
-        '2023-04-12 19:53:03');
-INSERT INTO `sys_oper_log`
-VALUES (395, '代码生成', 6, 'com.ruoyi.generator.controller.GenController.importTableSave()', 'POST', 1, 'admin', NULL,
-        '/tool/gen/importTable', '127.0.0.1', '内网IP', '\"parking_spaces\"', '{\"msg\":\"操作成功\",\"code\":200}', 0,
-        NULL, '2023-04-12 19:53:20');
-INSERT INTO `sys_oper_log`
-VALUES (396, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"spaces\",\"className\":\"ParkingSpaces\",\"columns\":[{\"capJavaField\":\"ParkId\",\"columnComment\":\"主键\",\"columnId\":211,\"columnName\":\"park_id\",\"columnType\":\"int(10) unsigned\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"parkId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":18,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceId\",\"columnComment\":\"车位ID\",\"columnId\":212,\"columnName\":\"parking_space_id\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"parkingSpaceId\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":18,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":213,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":18,\"updateBy\":\"\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceNumber\",\"columnComment\":\"车位号\",\"columnId\":214,\"columnName\":\"parking_space_number\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 19:55:49');
-INSERT INTO `sys_oper_log`
-VALUES (397, '代码生成', 2, 'com.ruoyi.generator.controller.GenController.editSave()', 'PUT', 1, 'admin', NULL,
-        '/tool/gen', '127.0.0.1', '内网IP',
-        '{\"businessName\":\"spaces\",\"className\":\"ParkingSpaces\",\"columns\":[{\"capJavaField\":\"ParkId\",\"columnComment\":\"主键\",\"columnId\":211,\"columnName\":\"park_id\",\"columnType\":\"int(10) unsigned\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":false,\"htmlType\":\"input\",\"increment\":true,\"insert\":true,\"isIncrement\":\"1\",\"isInsert\":\"1\",\"isPk\":\"1\",\"isRequired\":\"0\",\"javaField\":\"parkId\",\"javaType\":\"Integer\",\"list\":false,\"pk\":true,\"query\":false,\"queryType\":\"EQ\",\"required\":false,\"sort\":1,\"superColumn\":false,\"tableId\":18,\"updateBy\":\"\",\"updateTime\":\"2023-04-12 19:55:49\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceId\",\"columnComment\":\"车位ID\",\"columnId\":212,\"columnName\":\"parking_space_id\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"parkingSpaceId\",\"javaType\":\"String\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":2,\"superColumn\":false,\"tableId\":18,\"updateBy\":\"\",\"updateTime\":\"2023-04-12 19:55:49\",\"usableColumn\":false},{\"capJavaField\":\"UserId\",\"columnComment\":\"用户id\",\"columnId\":213,\"columnName\":\"user_id\",\"columnType\":\"int(11)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"increment\":false,\"insert\":true,\"isEdit\":\"1\",\"isIncrement\":\"0\",\"isInsert\":\"1\",\"isList\":\"1\",\"isPk\":\"0\",\"isQuery\":\"1\",\"isRequired\":\"1\",\"javaField\":\"userId\",\"javaType\":\"Long\",\"list\":true,\"pk\":false,\"query\":true,\"queryType\":\"EQ\",\"required\":true,\"sort\":3,\"superColumn\":false,\"tableId\":18,\"updateBy\":\"\",\"updateTime\":\"2023-04-12 19:55:49\",\"usableColumn\":false},{\"capJavaField\":\"ParkingSpaceNumber\",\"columnComment\":\"车位号\",\"columnId\":214,\"columnName\":\"parking_space_number\",\"columnType\":\"varchar(255)\",\"createBy\":\"admin\",\"createTime\":\"2023-04-12 19:53:20\",\"dictType\":\"\",\"edit\":true,\"htmlType\":\"input\",\"incremen',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 19:56:09');
-INSERT INTO `sys_oper_log`
-VALUES (398, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
-        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"parking_spaces\"}', NULL, 0, NULL,
-        '2023-04-12 19:56:11');
-INSERT INTO `sys_oper_log`
-VALUES (399, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":2,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W88888\",\"remark\":\"hello\",\"rent\":\"Y\",\"status\":1,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"updateTime\":\"2023-04-12 20:02:47.459\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 20:02:47');
-INSERT INTO `sys_oper_log`
-VALUES (400, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":2,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W88888\",\"remark\":\"hello\",\"rent\":\"N\",\"status\":1,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"updateTime\":\"2023-04-12 20:35:48.878\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 20:35:49');
-INSERT INTO `sys_oper_log`
-VALUES (401, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":2,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W88888\",\"remark\":\"hello\",\"rent\":\"Y\",\"status\":0,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"updateTime\":\"2023-04-12 20:42:53.743\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 20:42:54');
-INSERT INTO `sys_oper_log`
-VALUES (402, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":3,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W9999\",\"remark\":\"world\",\"rent\":\"Y\",\"status\":0,\"sysUser\":{\"admin\":false,\"userId\":2,\"userName\":\"ry\"},\"updateTime\":\"2023-04-12 20:43:13.635\",\"userId\":2}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 20:43:13');
-INSERT INTO `sys_oper_log`
-VALUES (403, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":2,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W88888\",\"remark\":\"hello\",\"rent\":\"N\",\"status\":0,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"updateTime\":\"2023-04-12 21:00:23.238\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 21:00:23');
-INSERT INTO `sys_oper_log`
-VALUES (404, '车位信息', 2, 'com.ruoyi.web.controller.community.ParkingSpacesController.edit()', 'PUT', 1, 'admin',
-        NULL, '/community/spaces', '127.0.0.1', '内网IP',
-        '{\"parkId\":2,\"parkingSpaceId\":\"金色家园001\",\"parkingSpaceNumber\":\"川W88888\",\"remark\":\"hello\",\"rent\":\"Y\",\"status\":1,\"sysUser\":{\"admin\":true,\"userId\":1,\"userName\":\"admin\"},\"updateTime\":\"2023-04-12 21:00:29.368\",\"userId\":1}',
-        '{\"msg\":\"操作成功\",\"code\":200}', 0, NULL, '2023-04-12 21:00:29');
+VALUES (337, '代码生成', 8, 'com.ruoyi.generator.controller.GenController.batchGenCode()', 'GET', 1, 'admin', NULL,
+        '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":\"device_manage\"}', NULL, 0, NULL,
+        '2023-04-27 22:51:22');
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -8482,7 +8054,7 @@ VALUES (2, '住户', 'user', 20, '5', 1, 1, '0', '0', 'admin', '2022-07-30 12:09
         '住户');
 INSERT INTO `sys_role`
 VALUES (3, '社区管理员', 'manager', 5, '4', 1, 1, '0', '0', 'admin', '2023-03-24 14:49:10', 'admin',
-        '2023-04-02 16:16:55', '社区管理员');
+        '2023-03-26 22:38:06', '社区管理员');
 INSERT INTO `sys_role`
 VALUES (4, '员工', 'employee', 10, '1', 1, 1, '0', '0', 'admin', '2023-03-24 14:50:23', 'admin', '2023-03-27 13:15:55',
         '员工');
@@ -8855,28 +8427,29 @@ VALUES ('1562369114496307239', 'adcode', '0', '440000', '广东', NULL, NULL, 19
 DROP TABLE IF EXISTS `sys_user`;
 CREATE TABLE `sys_user`
 (
-    `user_id`     bigint(20)                                              NOT NULL AUTO_INCREMENT COMMENT '用户ID',
-    `dept_id`     bigint(20)                                              NULL DEFAULT NULL COMMENT '部门ID',
-    `user_name`   varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL COMMENT '用户账号',
-    `nick_name`   varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci  NOT NULL COMMENT '用户昵称',
-    `user_type`   varchar(2) CHARACTER SET utf8 COLLATE utf8_general_ci   NULL DEFAULT '00' COMMENT '用户类型（00系统用户）',
-    `email`       varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL DEFAULT '' COMMENT '用户邮箱',
-    `phonenumber` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL DEFAULT '' COMMENT '手机号码',
-    `sex`         char(1) CHARACTER SET utf8 COLLATE utf8_general_ci      NULL DEFAULT '0' COMMENT '用户性别（0男 1女 2未知）',
-    `avatar`      varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '头像地址',
-    `password`    varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '密码',
-    `status`      char(1) CHARACTER SET utf8 COLLATE utf8_general_ci      NULL DEFAULT '0' COMMENT '帐号状态（0正常 1停用）',
-    `del_flag`    char(1) CHARACTER SET utf8 COLLATE utf8_general_ci      NULL DEFAULT '0' COMMENT '删除标志（0代表存在 2代表删除）',
-    `login_ip`    varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '最后登录IP',
-    `login_date`  datetime                                                NULL DEFAULT NULL COMMENT '最后登录时间',
-    `create_by`   varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL DEFAULT '' COMMENT '创建者',
-    `create_time` datetime                                                NULL DEFAULT NULL COMMENT '创建时间',
-    `update_by`   varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci  NULL DEFAULT '' COMMENT '更新者',
-    `update_time` datetime                                                NULL DEFAULT NULL COMMENT '更新时间',
-    `remark`      varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
+    `user_id`     bigint(20)                                                NOT NULL AUTO_INCREMENT COMMENT '用户ID',
+    `dept_id`     bigint(20)                                                NULL DEFAULT NULL COMMENT '部门ID',
+    `user_name`   varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci    NOT NULL COMMENT '用户账号',
+    `nick_name`   varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci    NOT NULL COMMENT '用户昵称',
+    `user_type`   varchar(2) CHARACTER SET utf8 COLLATE utf8_general_ci     NULL DEFAULT '00' COMMENT '用户类型（00系统用户）',
+    `email`       varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci    NULL DEFAULT '' COMMENT '用户邮箱',
+    `phonenumber` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci    NULL DEFAULT '' COMMENT '手机号码',
+    `sex`         char(1) CHARACTER SET utf8 COLLATE utf8_general_ci        NULL DEFAULT '0' COMMENT '用户性别（0男 1女 2未知）',
+    `avatar`      varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci   NULL DEFAULT '' COMMENT '头像地址',
+    `password`    varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci   NULL DEFAULT '' COMMENT '密码',
+    `status`      char(1) CHARACTER SET utf8 COLLATE utf8_general_ci        NULL DEFAULT '0' COMMENT '帐号状态（0正常 1停用）',
+    `del_flag`    char(1) CHARACTER SET utf8 COLLATE utf8_general_ci        NULL DEFAULT '0' COMMENT '删除标志（0代表存在 2代表删除）',
+    `login_ip`    varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci   NULL DEFAULT '' COMMENT '最后登录IP',
+    `login_date`  datetime                                                  NULL DEFAULT NULL COMMENT '最后登录时间',
+    `create_by`   varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci    NULL DEFAULT '' COMMENT '创建者',
+    `create_time` datetime                                                  NULL DEFAULT NULL COMMENT '创建时间',
+    `update_by`   varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci    NULL DEFAULT '' COMMENT '更新者',
+    `update_time` datetime                                                  NULL DEFAULT NULL COMMENT '更新时间',
+    `remark`      varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci   NULL DEFAULT NULL COMMENT '备注',
+    `face_data`   varchar(10000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '面部数据',
     PRIMARY KEY (`user_id`) USING BTREE
 ) ENGINE = InnoDB
-  AUTO_INCREMENT = 8
+  AUTO_INCREMENT = 9
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci COMMENT = '用户信息表'
   ROW_FORMAT = COMPACT;
@@ -8885,34 +8458,38 @@ CREATE TABLE `sys_user`
 -- Records of sys_user
 -- ----------------------------
 INSERT INTO `sys_user`
-VALUES (1, 103, 'admin', '若依', '00', '29152440390ai@gmail.com', '15888888888', '0',
+VALUES (1, 103, 'admin', '若依', '00', '29152440390ai@gmail.com', '15888888888', '1',
         '/profile/avatar/2023/03/26/blob_20230326224538A001.jpeg',
-        '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', '2023-04-12 20:36:46',
-        'admin', '2022-07-30 12:09:02', '', '2023-04-12 20:36:45', '管理员');
+        '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', '2023-04-28 00:07:37',
+        'admin', '2022-07-30 12:09:02', '', '2023-04-28 00:07:37', '管理员',
+        '[[265, 268], [267, 292], [273, 316], [279, 341], [286, 365], [299, 388], [317, 407], [338, 421], [364, 425], [391, 420], [412, 405], [429, 386], [441, 361], [446, 335], [450, 309], [454, 282], [454, 255], [278, 247], [287, 236], [303, 233], [319, 234], [335, 239], [359, 236], [377, 229], [396, 227], [415, 230], [430, 240], [350, 264], [350, 283], [351, 302], [351, 321], [333, 334], [343, 338], [355, 341], [366, 337], [377, 333], [293, 272], [303, 269], [314, 268], [326, 272], [314, 275], [303, 276], [379, 269], [389, 264], [401, 264], [413, 265], [402, 271], [390, 271], [327, 372], [335, 362], [346, 357], [357, 360], [367, 355], [380, 360], [392, 369], [382, 380], [370, 386], [359, 388], [348, 387], [337, 382], [332, 372], [347, 370], [358, 371], [368, 369], [386, 369], [368, 370], [358, 372], [347, 371]]');
 INSERT INTO `sys_user`
 VALUES (2, 101, 'ry', '社区管理员', '00', '29152440390ai@gmail.com', '15666666666', '1', '',
-        '$2a$10$gud3CF6HDYaIN54tk5nkNOKmCc6oGE8MLmKfqMJiItTNbYdT8fshq', '0', '0', '127.0.0.1', '2023-04-02 16:19:17',
-        'admin', '2022-07-30 12:09:02', 'admin', '2023-04-02 16:19:17', '项目经理用户');
+        '$2a$10$INuwvSgzvTKFSz2XKATGp.cUnXueDL2BArTdKw1VMDB0bMY6lCNdG', '0', '0', '127.0.0.1', '2023-03-26 23:04:43',
+        'admin', '2022-07-30 12:09:02', 'ry', '2023-03-26 23:04:42', '项目经理用户', NULL);
 INSERT INTO `sys_user`
 VALUES (3, 103, 'puyg', '普通员工', '00', '29152440390ai@gmail.com', '15666668888', '0', '',
-        '$2a$10$hcQBjAGUrpOdczUpr6K0celmNlxXI6XHv6h0FQze.TIy4NLPpHTwS', '0', '0', '127.0.0.1', '2023-04-02 16:20:14',
-        'admin', '2022-08-18 14:59:06', 'ry', '2023-04-02 16:20:14', '普通员工用户');
+        '$2a$10$LOQB0O4mIvIlAPQNdfxmDewsJT71ZJl78GmTxcqEfjz1GkEGiBQVS', '0', '0', '127.0.0.1', '2023-03-26 23:06:22',
+        'admin', '2022-08-18 14:59:06', 'admin', '2023-03-26 23:06:21', '普通员工用户', NULL);
 INSERT INTO `sys_user`
 VALUES (4, 100, 'rl', '住户', '00', '29152440390ai@gmail.com', '16688886666', '1', '',
         '$2a$10$Oqbee6viHRRF65V3l1.dUuXn6kGwL8kkxdE8sA3LBKZx/igB8xw.O', '0', '0', '', NULL, 'admin',
-        '2022-08-18 14:59:59', 'ry', '2023-03-26 13:22:44', '人力用户');
+        '2022-08-18 14:59:59', 'ry', '2023-03-26 13:22:44', '人力用户', NULL);
 INSERT INTO `sys_user`
 VALUES (5, 100, 'zhangsan', '张三', '00', '29152440390ai@gmail.com', '18888888888', '0', '',
         '$2a$10$9XRqtklag2AmsYNxn7nPtOK84yIucMsyQUrhkqN4UIu9aE6qgCdhG', '0', '2', '', NULL, 'admin',
-        '2022-08-20 20:44:07', '', NULL, '张三');
+        '2022-08-20 20:44:07', '', NULL, '张三', NULL);
 INSERT INTO `sys_user`
 VALUES (6, 100, '张三', 'zhangsan', '00', '29152440390ai@gmail.com', '18888888888', '0', '',
         '$2a$10$XQv4BvIzrW/15nbtTqk2p.UwXYbzvYys4Cj9yOb15IXpGNHZv511.', '0', '2', '', NULL, 'admin',
-        '2022-08-20 20:45:30', '', NULL, '张三');
+        '2022-08-20 20:45:30', '', NULL, '张三', NULL);
 INSERT INTO `sys_user`
-VALUES (7, 108, '李四', 'test', '00', '29152440390ai@gmail.com', '', '0', '',
-        '$2a$10$WLquGnykDNob1HD2QEgeR.6HZBxxx0mKI9osg2MixwnvJy/42kTae', '0', '0', '127.0.0.1', '2023-04-02 15:54:13',
-        'puyg', '2023-03-26 23:01:13', 'admin', '2023-04-02 15:54:13', NULL);
+VALUES (7, 108, 'test', 'test', '00', '29152440390ai@gmail.com', '', '0', '',
+        '$2a$10$i/ukc953lBUtF6gDScH6..0xppumepz5UpOAhPXfuz.jhVdaa9nRu', '0', '0', '127.0.0.1', '2023-03-26 23:04:26',
+        'puyg', '2023-03-26 23:01:13', '', '2023-03-26 23:04:25', NULL, NULL);
+INSERT INTO `sys_user`
+VALUES (8, 100, '11', '11', '00', '', '', '0', '', '$2a$10$/1g/xS3Lqd8AcHKuL.WaWeFLoQZDXEX7NHzPNw4WK/oASkaOvNPqm', '0',
+        '0', '', NULL, 'admin', '2023-04-24 14:02:56', 'admin', '2023-04-24 14:03:10', NULL, NULL);
 
 -- ----------------------------
 -- Table structure for sys_user_post
@@ -8966,6 +8543,6 @@ VALUES (3, 4);
 INSERT INTO `sys_user_role`
 VALUES (4, 2);
 INSERT INTO `sys_user_role`
-VALUES (7, 4);
+VALUES (7, 2);
 
 SET FOREIGN_KEY_CHECKS = 1;
