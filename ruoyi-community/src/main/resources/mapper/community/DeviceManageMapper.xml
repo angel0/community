@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.community.mapper.DeviceManageMapper">
+
+    <resultMap type="DeviceManage" id="DeviceManageResult">
+        <result property="deviceId" column="device_id"/>
+        <result property="deviceName" column="device_name"/>
+        <result property="deviceNo" column="device_no"/>
+        <result property="deviceType" column="device_type"/>
+        <result property="deviceState" column="device_state"/>
+        <result property="deviceLocation" column="device_location"/>
+        <result property="deviceUser" column="device_user"/>
+        <result property="deviceBuyTime" column="device_buy_time"/>
+        <result property="deviceWarrantyPeriod" column="device_warranty_period"/>
+        <result property="deviceMaintainRecords" column="device_maintain_records"/>
+        <result property="deviceUseDesc" column="device_use_desc"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="selectDeviceManageVo">
+        select device_id,
+               device_name,
+               device_no,
+               device_type,
+               device_state,
+               device_location,
+               device_user,
+               device_buy_time,
+               device_warranty_period,
+               device_maintain_records,
+               device_use_desc,
+               del_flag,
+               create_by,
+               create_time,
+               update_by,
+               update_time
+        from device_manage
+    </sql>
+
+    <select id="selectDeviceManageList" parameterType="DeviceManage" resultMap="DeviceManageResult">
+        <include refid="selectDeviceManageVo"/>
+        <where>
+            <if test="deviceName != null  and deviceName != ''">and device_name like concat('%', #{deviceName}, '%')
+            </if>
+            <if test="deviceNo != null  and deviceNo != ''">and device_no = #{deviceNo}</if>
+            <if test="deviceType != null  and deviceType != ''">and device_type = #{deviceType}</if>
+            <if test="deviceState != null  and deviceState != ''">and device_state = #{deviceState}</if>
+            <if test="deviceLocation != null  and deviceLocation != ''">and device_location = #{deviceLocation}</if>
+            <if test="deviceUser != null  and deviceUser != ''">and device_user = #{deviceUser}</if>
+            <if test="deviceBuyTime != null ">and device_buy_time = #{deviceBuyTime}</if>
+            <if test="deviceWarrantyPeriod != null ">and device_warranty_period = #{deviceWarrantyPeriod}</if>
+            <if test="deviceMaintainRecords != null  and deviceMaintainRecords != ''">and device_maintain_records =
+                #{deviceMaintainRecords}
+            </if>
+            <if test="deviceUseDesc != null  and deviceUseDesc != ''">and device_use_desc = #{deviceUseDesc}</if>
+        </where>
+    </select>
+
+    <select id="selectDeviceManageByDeviceId" parameterType="Long" resultMap="DeviceManageResult">
+        <include refid="selectDeviceManageVo"/>
+        where device_id = #{deviceId}
+    </select>
+
+    <insert id="insertDeviceManage" parameterType="DeviceManage" useGeneratedKeys="true" keyProperty="deviceId">
+        insert into device_manage
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="deviceName != null">device_name,</if>
+            <if test="deviceNo != null">device_no,</if>
+            <if test="deviceType != null and deviceType != ''">device_type,</if>
+            <if test="deviceState != null">device_state,</if>
+            <if test="deviceLocation != null and deviceLocation != ''">device_location,</if>
+            <if test="deviceUser != null and deviceUser != ''">device_user,</if>
+            <if test="deviceBuyTime != null">device_buy_time,</if>
+            <if test="deviceWarrantyPeriod != null">device_warranty_period,</if>
+            <if test="deviceMaintainRecords != null and deviceMaintainRecords != ''">device_maintain_records,</if>
+            <if test="deviceUseDesc != null and deviceUseDesc != ''">device_use_desc,</if>
+            <if test="delFlag != null and delFlag != ''">del_flag,</if>
+            <if test="createBy != null and createBy != ''">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null and updateBy != ''">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="deviceName != null">#{deviceName},</if>
+            <if test="deviceNo != null">#{deviceNo},</if>
+            <if test="deviceType != null and deviceType != ''">#{deviceType},</if>
+            <if test="deviceState != null">#{deviceState},</if>
+            <if test="deviceLocation != null and deviceLocation != ''">#{deviceLocation},</if>
+            <if test="deviceUser != null and deviceUser != ''">#{deviceUser},</if>
+            <if test="deviceBuyTime != null">#{deviceBuyTime},</if>
+            <if test="deviceWarrantyPeriod != null">#{deviceWarrantyPeriod},</if>
+            <if test="deviceMaintainRecords != null and deviceMaintainRecords != ''">#{deviceMaintainRecords},</if>
+            <if test="deviceUseDesc != null and deviceUseDesc != ''">#{deviceUseDesc},</if>
+            <if test="delFlag != null and delFlag != ''">#{delFlag},</if>
+            <if test="createBy != null and createBy != ''">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null and updateBy != ''">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+        </trim>
+    </insert>
+
+    <update id="updateDeviceManage" parameterType="DeviceManage">
+        update device_manage
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="deviceName != null">device_name = #{deviceName},</if>
+            <if test="deviceNo != null">device_no = #{deviceNo},</if>
+            <if test="deviceType != null and deviceType != ''">device_type = #{deviceType},</if>
+            <if test="deviceState != null">device_state = #{deviceState},</if>
+            <if test="deviceLocation != null and deviceLocation != ''">device_location = #{deviceLocation},</if>
+            <if test="deviceUser != null and deviceUser != ''">device_user = #{deviceUser},</if>
+            <if test="deviceBuyTime != null">device_buy_time = #{deviceBuyTime},</if>
+            <if test="deviceWarrantyPeriod != null">device_warranty_period = #{deviceWarrantyPeriod},</if>
+            <if test="deviceMaintainRecords != null and deviceMaintainRecords != ''">device_maintain_records =
+                #{deviceMaintainRecords},
+            </if>
+            <if test="deviceUseDesc != null and deviceUseDesc != ''">device_use_desc = #{deviceUseDesc},</if>
+            <if test="delFlag != null and delFlag != ''">del_flag = #{delFlag},</if>
+            <if test="createBy != null and createBy != ''">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where device_id = #{deviceId}
+    </update>
+
+    <delete id="deleteDeviceManageByDeviceId" parameterType="Long">
+        delete
+        from device_manage
+        where device_id = #{deviceId}
+    </delete>
+
+    <delete id="deleteDeviceManageByDeviceIds" parameterType="String">
+        delete from device_manage where device_id in
+        <foreach item="deviceId" collection="array" open="(" separator="," close=")">
+            #{deviceId}
+        </foreach>
+    </delete>
+</mapper>

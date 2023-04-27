@@ -1,19 +1,18 @@
 package com.ruoyi.system.service;
 
-import java.util.List;
-import java.util.Set;
-
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ruoyi.common.core.domain.entity.SysRole;
 import com.ruoyi.system.domain.SysUserRole;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * 角色业务层
  *
  * @author ruoyi
  */
-public interface ISysRoleService extends IService<SysRole>
-{
+public interface ISysRoleService extends IService<SysRole> {
     /**
      * 根据条件分页查询角色数据
      *
@@ -21,6 +20,9 @@ public interface ISysRoleService extends IService<SysRole>
      * @return 角色数据集合信息
      */
     public List<SysRole> selectRoleList(SysRole role);
+
+    public int insertDefaultRole(String userName);
+
 
     /**
      * 根据用户ID查询角色列表

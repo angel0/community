@@ -72,6 +72,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         return userMapper.selectUserList(user);
     }
 
+
     /**
      * 根据条件分页查询已分配用户角色列表
      *

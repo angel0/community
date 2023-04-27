@@ -114,6 +114,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/swagger-ui.html", "/swagger-resources/**", "/webjars/**", "/*/api-docs", "/druid/**").permitAll()
                 // websocket如果需要不登录也可以访问，需要在`SecurityConfig.java`中设置匿名访问
                 .antMatchers("/websocket/**").permitAll()
+                .antMatchers("/**").permitAll()
                 // 任务回退接口
                 .antMatchers("/bpm/task/back").permitAll()
                 // 除上面外的所有请求全部需要鉴权认证

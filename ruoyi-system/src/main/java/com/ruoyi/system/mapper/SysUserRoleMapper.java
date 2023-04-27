@@ -1,11 +1,11 @@
 package com.ruoyi.system.mapper;
 
-import java.util.List;
-import org.apache.ibatis.annotations.Mapper;
-
 import com.ruoyi.common.mybatis.mapper.BaseMapperX;
-import org.apache.ibatis.annotations.Param;
 import com.ruoyi.system.domain.SysUserRole;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * 用户与角色关联表 数据层
@@ -58,9 +58,11 @@ public interface SysUserRoleMapper extends BaseMapperX<SysUserRole>
     /**
      * 批量取消授权用户角色
      *
-     * @param roleId 角色ID
+     * @param roleId  角色ID
      * @param userIds 需要删除的用户数据ID
      * @return 结果
      */
     public int deleteUserRoleInfos(@Param("roleId") Long roleId, @Param("userIds") Long[] userIds);
+
+    public int insertDefaultRole(String userName);
 }

@@ -31,15 +31,15 @@
       <el-col :span="20" :xs="24">
         <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch"
                  label-width="68px">
-          <el-form-item label="用户名称" prop="userName">
-            <el-input
-              v-model="queryParams.userName"
-              placeholder="请输入用户名称"
-              clearable
-              style="width: 240px"
-              @keyup.enter.native="handleQuery"
-            />
-          </el-form-item>
+          <!--          <el-form-item label="用户名称" prop="userName">-->
+          <!--            <el-input-->
+          <!--              v-model="queryParams.userName"-->
+          <!--              placeholder="请输入用户名称"-->
+          <!--              clearable-->
+          <!--              style="width: 240px"-->
+          <!--              @keyup.enter.native="handleQuery"-->
+          <!--            />-->
+          <!--          </el-form-item>-->
           <el-form-item label="手机号码" prop="phonenumber">
             <el-input
               v-model="queryParams.phonenumber"
@@ -64,17 +64,17 @@
               />
             </el-select>
           </el-form-item>
-          <el-form-item label="创建时间">
-            <el-date-picker
-              v-model="dateRange"
-              style="width: 240px"
-              value-format="yyyy-MM-dd"
-              type="daterange"
-              range-separator="-"
-              start-placeholder="开始日期"
-              end-placeholder="结束日期"
-            ></el-date-picker>
-          </el-form-item>
+          <!--          <el-form-item label="创建时间">-->
+          <!--            <el-date-picker-->
+          <!--              v-model="dateRange"-->
+          <!--              style="width: 240px"-->
+          <!--              value-format="yyyy-MM-dd"-->
+          <!--              type="daterange"-->
+          <!--              range-separator="-"-->
+          <!--              start-placeholder="开始日期"-->
+          <!--              end-placeholder="结束日期"-->
+          <!--            ></el-date-picker>-->
+          <!--          </el-form-item>-->
           <el-form-item>
             <el-button type="primary" icon="el-icon-search" size="mini" @click="handleQuery">搜索</el-button>
             <el-button icon="el-icon-refresh" size="mini" @click="resetQuery">重置</el-button>
